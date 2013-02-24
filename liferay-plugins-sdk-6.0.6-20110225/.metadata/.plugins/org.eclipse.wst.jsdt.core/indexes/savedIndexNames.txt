@@ -1,11 +1,13 @@
 INDEX VERSION 1.122+/opt/lf60SDK/liferay-plugins-sdk-6.0.6-20110225/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
-646512548.index
+3662013205.index
+847212002.index
 4268701089.index
-2046169895.index
-4087261761.index
 382794018.index
 2632796118.index
-3662013205.index
+3595188577.index
+2046169895.index
+4087261761.index
 2352384967.index
-847212002.index
-3095512214.index
+3366097944.index
+658405886.index
+291896366.index

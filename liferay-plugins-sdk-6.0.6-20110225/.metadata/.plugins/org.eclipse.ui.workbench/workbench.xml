@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="73" version="2.0">
+<workbench progressCount="75" version="2.0">
 <workbenchAdvisor/>
 <window height="768" maximized="true" width="1024" x="0" y="27">
 <fastViewData fastViewLocation="1024"/>
@@ -15,7 +15,7 @@
 <coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="120" y="30"/>
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="104" y="30"/>
 <coolItem id="org.eclipse.team.ui.actionSet" itemType="typeToolBarContribution" x="48" y="30"/>
-<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="124" y="30"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="68" y="30"/>
 <coolItem id="org.eclipse.wst.server.ui.internal.webbrowser.actionSet" itemType="typeToolBarContribution" x="40" y="30"/>
 <coolItem id="org.eclipse.wst.ws.explorer.explorer" itemType="typeToolBarContribution" x="40" y="30"/>
 <coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
@@ -30,12 +30,12 @@
 <coolItem id="com.liferay.ide.eclipse.hook.ui.editor.HookXmlEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="com.liferay.ide.eclipse.portlet.ui.editor.servicebuilder" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.PropertiesFileEditor" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jst.jsp.core.jspsource.source" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="com.liferay.ide.eclipse.portlet.ui.editor.LiferayDisplayXmlEditor" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="com.liferay.ide.eclipse.portlet.ui.editor.PortletXmlEditor" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="org.eclipse.wst.css.core.csssource.source" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.wst.css.core.csssource.source" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
@@ -45,39 +45,10 @@
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-<part id="1"/>
-<part id="2"/>
-<part id="3"/>
-<part id="4"/>
-<part id="5"/>
-</presentation>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.wst.css.core.csssource.source" name="dockbar.css" partName="dockbar.css" path="/opt/lf60SDK/liferay-plugins-sdk-6.0.6-20110225/themes/eladio-theme/docroot/_diffs/css/dockbar.css" title="dockbar.css" tooltip="eladio-theme/docroot/_diffs/css/dockbar.css" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/eladio-theme/docroot/_diffs/css/dockbar.css"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="5488" selectionTopPixel="4970"/>
-</editor>
-<editor id="org.eclipse.wst.css.core.csssource.source" name="portlet.css" partName="portlet.css" path="/opt/lf60SDK/liferay-plugins-sdk-6.0.6-20110225/themes/eladio-theme/docroot/_diffs/css/portlet.css" title="portlet.css" tooltip="eladio-theme/docroot/_diffs/css/portlet.css" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/eladio-theme/docroot/_diffs/css/portlet.css"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="749" selectionTopPixel="506"/>
-</editor>
-<editor id="org.eclipse.wst.css.core.csssource.source" name="custom.css" partName="custom.css" path="/opt/lf60SDK/liferay-plugins-sdk-6.0.6-20110225/themes/eladio-theme/docroot/_diffs/css/custom.css" title="custom.css" tooltip="eladio-theme/docroot/_diffs/css/custom.css" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/eladio-theme/docroot/_diffs/css/custom.css"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="12098" selectionTopPixel="11152"/>
-</editor>
-<editor id="com.liferay.ide.eclipse.portlet.ui.editor.servicebuilder" name="service.xml" partName="service.xml" path="/opt/lf60SDK/liferay-plugins-sdk-6.0.6-20110225/portlets/user-registration-portlet/docroot/WEB-INF/service.xml" title="service.xml" tooltip="user-registration-portlet/docroot/WEB-INF/service.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/user-registration-portlet/docroot/WEB-INF/service.xml"/>
-</editor>
-<editor id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" name="portlet-hbm.xml" partName="portlet-hbm.xml" path="/opt/lf60SDK/liferay-plugins-sdk-6.0.6-20110225/portlets/user-registration-portlet/docroot/WEB-INF/src/META-INF/portlet-hbm.xml" title="portlet-hbm.xml" tooltip="user-registration-portlet/docroot/WEB-INF/src/META-INF/portlet-hbm.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/user-registration-portlet/docroot/WEB-INF/src/META-INF/portlet-hbm.xml"/>
-</editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ActionUtil.java" partName="ActionUtil.java" path="/opt/lf60SDK/liferay-plugins-sdk-6.0.6-20110225/portlets/user-registration-portlet/docroot/WEB-INF/src/com/oldschool/user/registration/portlet/ActionUtil.java" title="ActionUtil.java" tooltip="user-registration-portlet/docroot/WEB-INF/src/com/oldschool/user/registration/portlet/ActionUtil.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/user-registration-portlet/docroot/WEB-INF/src/com/oldschool/user/registration/portlet/ActionUtil.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="79" selectionOffset="1325" selectionTopPixel="119"/>
-</editor>
 </editors>
 <views>
 <view id="org.eclipse.team.ui.GenericHistoryView" partName="History">
@@ -128,8 +99,7 @@
 <view id="org.eclipse.ui.views.PropertySheet" partName="Properties"/>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
-<expanded>
-<category IMemento.internal.id="Warnings (48 items)"/>
+<expanded>&#x0A;<category IMemento.internal.id="Warnings (48 items)"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="211" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.resourceField="105" org.eclipse.ui.ide.severityAndDescriptionField="350"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -139,7 +109,9 @@
 <visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
 </viewState>
 </view>
-<view id="org.eclipse.datatools.connectivity.DataSourceExplorerNavigator" partName="Data Source Explorer"/>
+<view id="org.eclipse.datatools.connectivity.DataSourceExplorerNavigator" partName="Data Source Explorer">
+<viewState CommonNavigator.LINKING_ENABLED="0" showCategories="true"/>
+</view>
 <view id="org.eclipse.ui.console.ConsoleView" partName="Console">
 <viewState/>
 </view>
@@ -179,7 +151,9 @@
 <view id="org.eclipse.wst.server.ui.ServersView" partName="Servers">
 <viewState CommonNavigator.LINKING_ENABLED="0"/>
 </view>
-<view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc"/>
+<view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc">
+<viewState/>
+</view>
 </views>
 <perspectives activePart="org.eclipse.ui.console.ConsoleView" activePerspective="com.liferay.ide.eclipse.ui.perspective.liferay">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
@@ -386,7 +360,7 @@
 </presentation>
 </folder>
 </info>
-<info folder="true" part="bottomTopLeft" ratio="0.7110862" ratioLeft="635" ratioRight="258" relationship="4" relative="topLeft">
+<info folder="true" part="bottomTopLeft" ratio="0.6080627" ratioLeft="543" ratioRight="350" relationship="4" relative="topLeft">
 <folder activePageID="org.eclipse.wst.server.ui.ServersView" appearance="2" expanded="2">
 <page content="org.eclipse.wst.server.ui.ServersView" label="Servers"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
@@ -434,44 +408,31 @@
 <view id="org.eclipse.ui.views.ProblemView"/>
 <view id="org.eclipse.mylyn.tasks.ui.views.repositories"/>
 <fastViewBars/>
-<layout>
-<mainWindow>
-<info folder="true" part="top">
-<folder activePageID="org.eclipse.team.sync.views.SynchronizeView" appearance="2" expanded="2">
-<page content="org.eclipse.team.sync.views.SynchronizeView" label="Synchronize"/>
+<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="top">&#x0A;<folder activePageID="org.eclipse.team.sync.views.SynchronizeView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.team.sync.views.SynchronizeView" label="Synchronize"/>
 <page content="org.eclipse.team.ccvs.ui.RepositoriesView" label="LabelNotFound"/>
 <page content="org.tigris.subversion.subclipse.ui.repository.RepositoriesView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="1254" ratioRight="418" relationship="2" relative="top">
-<folder appearance="2" expanded="2">
-<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="1254" ratioRight="418" relationship="2" relative="top">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.44976076" ratioLeft="752" ratioRight="920" relationship="2" relative="top"/>
-<info folder="true" part="top2" ratio="0.79910713" ratioLeft="716" ratioRight="180" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.views.ProblemView" appearance="2" expanded="2">
-<page content="org.eclipse.team.ui.GenericHistoryView" label="History"/>
+<info folder="true" part="top2" ratio="0.79910713" ratioLeft="716" ratioRight="180" relationship="4" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.views.ProblemView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.team.ui.GenericHistoryView" label="History"/>
 <page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.tigris.subversion.subclipse.ui.history.HistoryView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 <part id="1"/>
 <part id="2"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@6bf1640f" ratio="0.69977677" ratioLeft="627" ratioRight="269" relationship="4" relative="top">
-<folder activePageID="org.eclipse.mylyn.tasks.ui.views.repositories" appearance="2" expanded="2">
-<page content="org.eclipse.mylyn.tasks.ui.views.repositories" label="Task Repositories"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@6bf1640f" ratio="0.69977677" ratioLeft="627" ratioRight="269" relationship="4" relative="top">&#x0A;<folder activePageID="org.eclipse.mylyn.tasks.ui.views.repositories" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.mylyn.tasks.ui.views.repositories" label="Task Repositories"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 </presentation>
 </folder>
 </info>
@@ -480,177 +441,7 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory>
-<editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.liferay.ide.eclipse.portlet.ui.editor.servicebuilder" path="/user-registration-portlet/docroot/WEB-INF/service.xml"/>
-<editor connInfoName="Undefined:::" editorInputType="SQLScrapbookEditorInput" factoryID="org.eclipse.datatools.sqltools.internal.sqlscrapbook.editor.SQLScrapbookEditorInputFactory" id="org.eclipse.datatools.sqltools.sqlscrapbook.SQLScrapbookEditor" path="/user-registration-portlet/docroot/WEB-INF/sql/tables.sql"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/user-registration-portlet/docroot/WEB-INF/src/com/oldschool/user/registration/service/impl/USMemberLocalServiceImpl.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/user-registration-portlet/docroot/WEB-INF/src/com/oldschool/user/registration/service/impl/USMemberLocalServiceImpl.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/user-registration-portlet/docroot/WEB-INF/src/com/oldschool/user/registration/model/impl/USMemberModelImpl.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/user-registration-portlet/docroot/WEB-INF/service/com/oldschool/user/registration/model/USMember.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/user-registration-portlet/docroot/WEB-INF/service/com/oldschool/user/registration/model/USMemberModel.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/user-registration-portlet/docroot/WEB-INF/src/com/oldschool/user/registration/model/impl/USMemberImpl.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/user-registration-portlet/docroot/WEB-INF/src/com/oldschool/user/registration/portlet/AdminRegistrationPortlet.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/user-registration-portlet/docroot/WEB-INF/src/com/oldschool/user/registration/portlet/UserRegistrationPortlet.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.css.core.csssource.source" path="/eladio-theme/docroot/_diffs/css/dockbar.css"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/eladio-theme/docroot/_diffs/images/dockbar"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/eladio-theme/docroot/_diffs/templates/portal_normal.vm"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/eladio-theme/docroot/_diffs/templates/navigation.vm"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/eladio-theme/docroot/templates/portlet.vm"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.css.core.csssource.source" path="/eladio-theme/docroot/css/portlet.css"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.css.core.csssource.source" path="/eladio-theme/docroot/_diffs/css/portlet.css"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.css.core.csssource.source" path="/eladio-theme/docroot/_diffs/css/custom.css"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ant.ui.internal.editor.AntEditor" path="/titulo-hook/build.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/user-registration-portlet/docroot/WEB-INF/src/com/oldschool/user/registration/portlet/registerFormValidator.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.liferay.ide.eclipse.portlet.ui.editor.servicebuilder" path="/user-registration-portlet/docroot/WEB-INF/service.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" path="/user-registration-portlet/docroot/WEB-INF/src/META-INF/portlet-hbm.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/user-registration-portlet/docroot/WEB-INF/src/com/oldschool/user/registration/service/impl/USMemberLocalServiceImpl.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.core.runtime.xml.source" path="/user-registration-portlet/docroot/WEB-INF/src/META-INF/portlet-hbm.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" path="/user-registration-portlet/docroot/admin/edit_member.jsp"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/user-registration-portlet/docroot/WEB-INF/src/com/oldschool/user/registration/model/impl/USPhoneNumberImpl.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.liferay.ide.eclipse.portlet.ui.editor.servicebuilder" path="/user-registration-portlet/docroot/WEB-INF/service.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" path="/user-registration-portlet/docroot/WEB-INF/src/META-INF/portlet-hbm.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/user-registration-portlet/docroot/WEB-INF/src/com/oldschool/user/registration/portlet/ActionUtil.java"/>
-</editors>
-<item historyLabel="USMemberLocalServiceImpl.java" index="2">
-<position info="not_deleted" x="4" y="0"/>
-</item>
-<item historyLabel="service.xml" index="0"/>
-<item historyLabel="tables.sql" index="1">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="service.xml" index="0"/>
-<item historyLabel="USMemberLocalServiceImpl.java" index="3">
-<position info="not_deleted" x="2336" y="0"/>
-</item>
-<item historyLabel="service.xml" index="0"/>
-<item historyLabel="USMemberLocalServiceImpl.java" index="3">
-<position info="not_deleted" x="2336" y="0"/>
-</item>
-<item historyLabel="USMemberLocalServiceImpl.java" index="3">
-<position info="not_deleted" x="2333" y="0"/>
-</item>
-<item historyLabel="service.xml" index="0"/>
-<item historyLabel="USMemberLocalServiceImpl.java" index="3">
-<position info="not_deleted" x="4476" y="0"/>
-</item>
-<item historyLabel="USMemberModelImpl.java" index="4">
-<position info="not_deleted" x="4" y="0"/>
-</item>
-<item historyLabel="USMemberLocalServiceImpl.java" index="3">
-<position info="not_deleted" x="4476" y="0"/>
-</item>
-<item historyLabel="USMemberLocalServiceImpl.java" index="3">
-<position/>
-</item>
-<item historyLabel="USMemberLocalServiceImpl.java" index="3">
-<position/>
-</item>
-<item historyLabel="USMember.java" index="5">
-<position info="not_deleted" x="4" y="0"/>
-</item>
-<item historyLabel="USMemberModel.java" index="6">
-<position info="not_deleted" x="1568" y="0"/>
-</item>
-<item historyLabel="USMember.java" index="5">
-<position info="not_deleted" x="4" y="0"/>
-</item>
-<item historyLabel="USMemberImpl.java" index="7">
-<position info="not_deleted" x="4" y="0"/>
-</item>
-<item historyLabel="USMemberModelImpl.java" index="4">
-<position info="not_deleted" x="4" y="0"/>
-</item>
-<item historyLabel="USMemberLocalServiceImpl.java" index="3">
-<position info="not_deleted" x="2336" y="0"/>
-</item>
-<item historyLabel="AdminRegistrationPortlet.java" index="8">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="UserRegistrationPortlet.java" index="9">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="AdminRegistrationPortlet.java" index="8">
-<position info="not_deleted" x="1780" y="0"/>
-</item>
-<item historyLabel="dockbar.css" index="10">
-<position info="not_deleted" x="4342" y="0"/>
-</item>
-<item historyLabel="dockbar" index="11">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="dockbar.css" index="10">
-<position info="not_deleted" x="4342" y="0"/>
-</item>
-<item historyLabel="portal_normal.vm" index="12">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="navigation.vm" index="13">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="portlet.vm" index="14">
-<position info="not_deleted" x="421" y="0"/>
-</item>
-<item historyLabel="portlet.css" index="15">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="portlet.vm" index="14">
-<position info="not_deleted" x="421" y="0"/>
-</item>
-<item historyLabel="navigation.vm" index="13">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="portal_normal.vm" index="12">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="dockbar.css" index="10">
-<position/>
-</item>
-<item historyLabel="portlet.css" index="16">
-<position info="not_deleted" x="749" y="0"/>
-</item>
-<item historyLabel="custom.css" index="17">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="build.xml" index="18">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="custom.css" index="17">
-<position info="not_deleted" x="12098" y="0"/>
-</item>
-<item historyLabel="registerFormValidator.java" index="19">
-<position info="not_deleted" x="1628" y="20"/>
-</item>
-<item historyLabel="service.xml" index="20"/>
-<item historyLabel="portlet-hbm.xml" index="21">
-<position info="not_deleted" x="943" y="0"/>
-</item>
-<item historyLabel="USMemberLocalServiceImpl.java" index="22">
-<position info="not_deleted" x="4" y="0"/>
-</item>
-<item historyLabel="portlet-hbm.xml" index="23">
-<position info="not_deleted" x="943" y="0"/>
-</item>
-<item historyLabel="edit_member.jsp" index="24">
-<position info="not_deleted" x="786" y="20"/>
-</item>
-<item historyLabel="custom.css" index="17">
-<position info="not_deleted" x="12098" y="0"/>
-</item>
-<item historyLabel="USPhoneNumberImpl.java" index="25">
-<position info="not_deleted" x="4" y="0"/>
-</item>
-<item historyLabel="custom.css" index="17">
-<position info="not_deleted" x="12098" y="0"/>
-</item>
-<item historyLabel="service.xml" index="26"/>
-<item historyLabel="portlet-hbm.xml" index="27">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item active="true" historyLabel="ActionUtil.java" index="28">
-<position info="not_deleted" x="1325" y="79"/>
-</item>
-</navigationHistory>
+<navigationHistory/>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
@@ -669,11 +460,11 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ActionUtil.java" tooltip="user-registration-portlet/docroot/WEB-INF/src/com/oldschool/user/registration/portlet/ActionUtil.java">
-<persistable path="/user-registration-portlet/docroot/WEB-INF/src/com/oldschool/user/registration/portlet/ActionUtil.java"/>
-</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" name="portlet-hbm.xml" tooltip="user-registration-portlet/docroot/WEB-INF/src/META-INF/portlet-hbm.xml">
 <persistable path="/user-registration-portlet/docroot/WEB-INF/src/META-INF/portlet-hbm.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ActionUtil.java" tooltip="user-registration-portlet/docroot/WEB-INF/src/com/oldschool/user/registration/portlet/ActionUtil.java">
+<persistable path="/user-registration-portlet/docroot/WEB-INF/src/com/oldschool/user/registration/portlet/ActionUtil.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.liferay.ide.eclipse.portlet.ui.editor.servicebuilder" name="service.xml" tooltip="user-registration-portlet/docroot/WEB-INF/service.xml">
 <persistable path="/user-registration-portlet/docroot/WEB-INF/service.xml"/>

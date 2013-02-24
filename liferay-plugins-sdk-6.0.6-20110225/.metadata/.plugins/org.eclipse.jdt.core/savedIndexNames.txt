@@ -40,7 +40,6 @@ INDEX VERSION 1.126+/opt/lf60SDK/liferay-plugins-sdk-6.0.6-20110225/.metadata/.p
 382794018.index
 2249176239.index
 539089091.index
-581104223.index
 999426727.index
 2210011634.index
 262802227.index
@@ -49,6 +48,6 @@ INDEX VERSION 1.126+/opt/lf60SDK/liferay-plugins-sdk-6.0.6-20110225/.metadata/.p
 1698757907.index
 3662611576.index
 1375625794.index
+2529040063.index
 3662013205.index
-646512548.index
 1742194890.index
