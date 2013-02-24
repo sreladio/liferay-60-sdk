@@ -21,7 +21,7 @@
 		<% 
 			Calendar calendar = CalendarFactoryUtil.getCalendar();
 			calendar.set(Calendar.YEAR, 2013);
-		%>
+		%>  
 		<aui:fieldset>
             <aui:field-wrapper name="user-birth-date">
             	<liferay-ui:input-date

@@ -13,7 +13,7 @@
 			<portlet-class>com.oldschool.user.registration.portlet.UserRegistrationPortlet</portlet-class>
 			<init-param> 
 				<name>view-jsp</name>
-				<value>/view.jsp</value>
+				<value>/user/view.jsp</value>
 		</init-param>
 		
 		<init-param> 
