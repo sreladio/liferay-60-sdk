@@ -1,0 +1,27 @@
+package com.oldschool.user.registration.portlet;
+
+import javax.portlet.ActionRequest;
+import javax.portlet.ActionResponse;
+
+import com.liferay.portal.kernel.util.ParamUtil;
+import com.liferay.portal.kernel.util.Validator;
+import com.liferay.util.bridges.mvc.MVCPortlet;
+import com.oldschool.user.registration.model.USMember;
+import com.oldschool.user.registration.service.USMemberLocalServiceUtil;
+
+public class AdminRegistrationPortlet extends MVCPortlet {
+	
+	protected String editMemberJSP = "/admin/edit_member.jsp";
+
+	public void editMember(ActionRequest request,	ActionResponse response)
+			throws Exception {
+		
+		long memberKey = ParamUtil.getLong(request, "resourcePrimKey");
+		if (Validator.isNotNull(memberKey)) {
+			USMember member = USMemberLocalServiceUtil.getUSMember(memberKey);
+			request.setAttribute("member", member);
+			response.setRenderParameter("jspPage", editMemberJSP);
+		}
+	}
+
+}

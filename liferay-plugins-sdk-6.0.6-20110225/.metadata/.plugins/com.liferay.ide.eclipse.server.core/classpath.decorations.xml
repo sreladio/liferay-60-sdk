@@ -1,0 +1,156 @@
+<classpath>
+  <container id="ipc-publico-portlet!com.liferay.ide.eclipse.server.plugin.container/portlet">
+    <entry id="/opt/lf60/liferay-portal-6.0.6/tomcat-6.0.29/webapps/ROOT/WEB-INF/lib/log4j.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/opt/lf60/liferay-portal-6.0.6/tomcat-6.0.29/webapps/ROOT/WEB-INF/lib/commons-logging.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/opt/lf60/liferay-portal-6.0.6/tomcat-6.0.29/webapps/ROOT/WEB-INF/lib/util-taglib.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/opt/lf60/liferay-portal-6.0.6/tomcat-6.0.29/webapps/ROOT/WEB-INF/lib/util-java.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/opt/lf60/liferay-portal-6.0.6/tomcat-6.0.29/webapps/ROOT/WEB-INF/lib/util-bridges.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+  </container>
+  <container id="titulo-hook!com.liferay.ide.eclipse.server.plugin.container/hook">
+    <entry id="/opt/lf60/liferay-portal-6.0.6/tomcat-6.0.29/webapps/ROOT/WEB-INF/lib/struts.jar">
+      <attribute name="javadoc_location"></attribute>
+    </entry>
+    <entry id="/opt/lf60/liferay-portal-6.0.6/tomcat-6.0.29/webapps/ROOT/WEB-INF/lib/log4j.jar">
+      <attribute name="javadoc_location"></attribute>
+    </entry>
+    <entry id="/opt/lf60/liferay-portal-6.0.6/tomcat-6.0.29/webapps/ROOT/WEB-INF/lib/commons-logging.jar">
+      <attribute name="javadoc_location"></attribute>
+    </entry>
+    <entry id="/opt/lf60/liferay-portal-6.0.6/tomcat-6.0.29/webapps/ROOT/WEB-INF/lib/util-taglib.jar">
+      <attribute name="javadoc_location"></attribute>
+    </entry>
+    <entry id="/opt/lf60/liferay-portal-6.0.6/tomcat-6.0.29/webapps/ROOT/WEB-INF/lib/struts-el.jar">
+      <attribute name="javadoc_location"></attribute>
+    </entry>
+    <entry id="/opt/lf60/liferay-portal-6.0.6/tomcat-6.0.29/webapps/ROOT/WEB-INF/lib/portal-impl.jar">
+      <attribute name="javadoc_location"></attribute>
+    </entry>
+    <entry id="/opt/lf60/liferay-portal-6.0.6/tomcat-6.0.29/webapps/ROOT/WEB-INF/lib/util-java.jar">
+      <attribute name="javadoc_location"></attribute>
+    </entry>
+    <entry id="/opt/lf60/liferay-portal-6.0.6/tomcat-6.0.29/webapps/ROOT/WEB-INF/lib/util-bridges.jar">
+      <attribute name="javadoc_location"></attribute>
+    </entry>
+  </container>
+  <container id="bable-hook!com.liferay.ide.eclipse.server.plugin.container/hook">
+    <entry id="/opt/lf60/liferay-portal-6.0.6/tomcat-6.0.29/webapps/ROOT/WEB-INF/lib/struts.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/opt/lf60/liferay-portal-6.0.6/tomcat-6.0.29/webapps/ROOT/WEB-INF/lib/log4j.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/opt/lf60/liferay-portal-6.0.6/tomcat-6.0.29/webapps/ROOT/WEB-INF/lib/commons-logging.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/opt/lf60/liferay-portal-6.0.6/tomcat-6.0.29/webapps/ROOT/WEB-INF/lib/util-taglib.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/opt/lf60/liferay-portal-6.0.6/tomcat-6.0.29/webapps/ROOT/WEB-INF/lib/struts-el.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/opt/lf60/liferay-portal-6.0.6/tomcat-6.0.29/webapps/ROOT/WEB-INF/lib/portal-impl.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/opt/lf60/liferay-portal-6.0.6/tomcat-6.0.29/webapps/ROOT/WEB-INF/lib/util-java.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/opt/lf60/liferay-portal-6.0.6/tomcat-6.0.29/webapps/ROOT/WEB-INF/lib/util-bridges.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+  </container>
+  <container id="user-registration-portlet!com.liferay.ide.eclipse.server.plugin.container/portlet">
+    <entry id="/opt/lf60/liferay-portal-6.0.6/tomcat-6.0.29/webapps/ROOT/WEB-INF/lib/log4j.jar">
+      <attribute name="javadoc_location"></attribute>
+    </entry>
+    <entry id="/opt/lf60/liferay-portal-6.0.6/tomcat-6.0.29/webapps/ROOT/WEB-INF/lib/commons-logging.jar">
+      <attribute name="javadoc_location"></attribute>
+    </entry>
+    <entry id="/opt/lf60/liferay-portal-6.0.6/tomcat-6.0.29/webapps/ROOT/WEB-INF/lib/util-taglib.jar">
+      <attribute name="javadoc_location"></attribute>
+    </entry>
+    <entry id="/opt/lf60/liferay-portal-6.0.6/tomcat-6.0.29/webapps/ROOT/WEB-INF/lib/util-java.jar">
+      <attribute name="javadoc_location"></attribute>
+    </entry>
+    <entry id="/opt/lf60/liferay-portal-6.0.6/tomcat-6.0.29/webapps/ROOT/WEB-INF/lib/util-bridges.jar">
+      <attribute name="javadoc_location"></attribute>
+    </entry>
+  </container>
+  <container id="z-portlet!com.liferay.ide.eclipse.server.plugin.container/portlet">
+    <entry id="/opt/lf60/liferay-portal-6.0.6/tomcat-6.0.29/webapps/ROOT/WEB-INF/lib/log4j.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/opt/lf60/liferay-portal-6.0.6/tomcat-6.0.29/webapps/ROOT/WEB-INF/lib/commons-logging.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/opt/lf60/liferay-portal-6.0.6/tomcat-6.0.29/webapps/ROOT/WEB-INF/lib/util-taglib.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/opt/lf60/liferay-portal-6.0.6/tomcat-6.0.29/webapps/ROOT/WEB-INF/lib/util-java.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/opt/lf60/liferay-portal-6.0.6/tomcat-6.0.29/webapps/ROOT/WEB-INF/lib/util-bridges.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+  </container>
+  <container id="product-registration-portlet!com.liferay.ide.eclipse.server.plugin.container/portlet">
+    <entry id="/opt/lf60/liferay-portal-6.0.6/tomcat-6.0.29/webapps/ROOT/WEB-INF/lib/log4j.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/opt/lf60/liferay-portal-6.0.6/tomcat-6.0.29/webapps/ROOT/WEB-INF/lib/commons-logging.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/opt/lf60/liferay-portal-6.0.6/tomcat-6.0.29/webapps/ROOT/WEB-INF/lib/util-taglib.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/opt/lf60/liferay-portal-6.0.6/tomcat-6.0.29/webapps/ROOT/WEB-INF/lib/util-java.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/opt/lf60/liferay-portal-6.0.6/tomcat-6.0.29/webapps/ROOT/WEB-INF/lib/util-bridges.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+  </container>
+  <container id="hello-world-portlet!com.liferay.ide.eclipse.server.plugin.container/portlet">
+    <entry id="/opt/lf60/liferay-portal-6.0.6/tomcat-6.0.29/webapps/ROOT/WEB-INF/lib/log4j.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/opt/lf60/liferay-portal-6.0.6/tomcat-6.0.29/webapps/ROOT/WEB-INF/lib/commons-logging.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/opt/lf60/liferay-portal-6.0.6/tomcat-6.0.29/webapps/ROOT/WEB-INF/lib/util-taglib.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/opt/lf60/liferay-portal-6.0.6/tomcat-6.0.29/webapps/ROOT/WEB-INF/lib/util-java.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/opt/lf60/liferay-portal-6.0.6/tomcat-6.0.29/webapps/ROOT/WEB-INF/lib/util-bridges.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+  </container>
+  <container id="ipc-baseball-portlet!com.liferay.ide.eclipse.server.plugin.container/portlet">
+    <entry id="/opt/lf60/liferay-portal-6.0.6/tomcat-6.0.29/webapps/ROOT/WEB-INF/lib/log4j.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/opt/lf60/liferay-portal-6.0.6/tomcat-6.0.29/webapps/ROOT/WEB-INF/lib/commons-logging.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/opt/lf60/liferay-portal-6.0.6/tomcat-6.0.29/webapps/ROOT/WEB-INF/lib/util-taglib.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/opt/lf60/liferay-portal-6.0.6/tomcat-6.0.29/webapps/ROOT/WEB-INF/lib/util-java.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/opt/lf60/liferay-portal-6.0.6/tomcat-6.0.29/webapps/ROOT/WEB-INF/lib/util-bridges.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+  </container>
+</classpath>

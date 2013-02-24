@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" default-destroy-method="destroy" default-init-method="afterPropertiesSet" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="com.oldschool.internet.productregistration.service.PRProductLocalService" class="com.oldschool.internet.productregistration.service.impl.PRProductLocalServiceImpl" />
+	<bean id="com.oldschool.internet.productregistration.service.PRProductLocalServiceUtil" class="com.oldschool.internet.productregistration.service.PRProductLocalServiceUtil">
+		<property name="service" ref="com.oldschool.internet.productregistration.service.PRProductLocalService" />
+	</bean>
+	<bean id="com.oldschool.internet.productregistration.service.persistence.PRProductPersistence" class="com.oldschool.internet.productregistration.service.persistence.PRProductPersistenceImpl" parent="basePersistence" />
+</beans>

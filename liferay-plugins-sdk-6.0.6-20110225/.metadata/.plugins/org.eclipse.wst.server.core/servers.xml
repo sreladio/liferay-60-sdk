@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servers>
+  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/Liferay v6.0 CE Server (Tomcat 6) at localhost-config" hostname="localhost" id="Liferay v6.0 CE Server (Tomcat 6) at localhost" name="Liferay v6.0 CE Server (Tomcat 6) at localhost" runtime-id="Liferay v6.0 CE (Tomcat 6)" saveSeparateContextFiles="false" server-type="com.liferay.ide.eclipse.server.tomcat.60" server-type-id="com.liferay.ide.eclipse.server.tomcat.60" start-timeout="900" stop-timeout="300" testEnvironment="false" timestamp="13">
+    <list key="modules" value0="ipc-baseball-portlet::org.eclipse.jst.jee.server:ipc-baseball-portlet::jst.web::2.5" value1="ipc-publico-portlet::org.eclipse.jst.jee.server:ipc-publico-portlet::jst.web::2.5" value2="eladio-theme::org.eclipse.jst.jee.server:eladio-theme::jst.web::2.5"/>
+  </server>
+</servers>

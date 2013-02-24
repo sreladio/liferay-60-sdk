@@ -1,0 +1,9 @@
+INDEX VERSION 1.126
+/opt/lf60SDK/liferay-plugins-sdk-6.0.6-20110225/portlets/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/3997027623.index
+/ipc-baseball-portlet/docroot/WEB-INF/src
+/opt/lf60SDK/liferay-plugins-sdk-6.0.6-20110225/portlets/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/1415104793.index
+/ipc-baseball-portlet/docroot/WEB-INF/src
+/opt/lf60SDK/liferay-plugins-sdk-6.0.6-20110225/portlets/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/4117203083.index
+/ipc-publico-portlet/docroot/WEB-INF/src
+/opt/lf60SDK/liferay-plugins-sdk-6.0.6-20110225/portlets/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/3633243788.index
+/ipc-baseball-portlet/docroot/WEB-INF/src

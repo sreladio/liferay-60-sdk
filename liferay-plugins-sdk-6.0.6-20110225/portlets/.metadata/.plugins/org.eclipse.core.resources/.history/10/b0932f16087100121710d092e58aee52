@@ -1,0 +1,67 @@
+AUI().ready(
+	'liferay-hudcrumbs',
+	function(A) {
+		if (Liferay.Browser.isIe() && Liferay.Browser.getMajorVersion() < 7) {
+			var navigation = A.one('#navigation > ul');
+
+			if (navigation) {
+				navigation.delegate(
+					'mouseenter',
+					function(event) {
+						event.currentTarget.addClass('hover');
+					},
+					'> li'
+				);
+
+				navigation.delegate(
+					'mouseleave',
+					function(event) {
+						event.currentTarget.removeClass('hover');
+					},
+					'> li'
+				);
+			}
+		}
+
+		var siteBreadcrumbs = A.one('.site-breadcrumbs');
+
+		if (siteBreadcrumbs) {
+			siteBreadcrumbs.plug(A.Hudcrumbs);
+		}
+	}
+);
+
+AUI().ready('aui-carousel', function(B) {
+	 
+	new B.Carousel(
+	        {	            
+	            intervalTime: 5,
+	            boundingBox: '#myCarousel',
+	            activeIndex: 0,
+	            height: 250,
+	            width: 700
+	        }
+	    )
+	    .render();
+	
+	}
+);
+
+AUI().use('get', function(A){
+    A.Get.script('./jquery.bxslider.min.js', {
+
+       onSuccess: function(){
+
+    	   $(document).ready(function(){
+    		   $('.bxslider').bxSlider();
+    	   });
+    	   
+           // jQuery() can be used in here...
+
+      }
+
+ });
+});
+
+
+

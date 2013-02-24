@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<master-details-editor-page-state>
+    <content-outline>
+        <ratio>0.29991503823279525</ratio>
+        <root>
+            <node>
+                <label>Hook Configuration</label>
+                <expanded>true</expanded>
+                <node>
+                    <label>Portal Properties</label>
+                    <selected>true</selected>
+                </node>
+            </node>
+        </root>
+    </content-outline>
+</master-details-editor-page-state>

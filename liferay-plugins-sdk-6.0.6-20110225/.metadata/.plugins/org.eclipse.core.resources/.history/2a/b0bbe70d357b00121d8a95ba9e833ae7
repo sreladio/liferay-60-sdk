@@ -1,0 +1,52 @@
+package com.oldschool.user.registration.portlet;
+
+
+import java.util.Collections;
+import java.util.Date;
+import java.util.List;
+
+import javax.portlet.ActionRequest;
+import javax.portlet.RenderRequest;
+
+import com.liferay.portal.kernel.exception.PortalException;
+import com.liferay.portal.kernel.exception.SystemException;
+import com.liferay.portal.kernel.util.ParamUtil;
+import com.liferay.portal.kernel.util.WebKeys;
+import com.liferay.portal.theme.ThemeDisplay;
+import com.liferay.portal.util.PortalUtil;
+import com.oldschool.user.registration.model.USMember;
+import com.oldschool.user.registration.model.impl.USMemberImpl;
+import com.oldschool.user.registration.service.USMemberLocalServiceUtil;
+
+public class ActionUtil {
+
+	public static USMember memberFromRequest(ActionRequest request) throws com.liferay.portal.kernel.exception.PortalException {
+		ThemeDisplay themeDisplay = (ThemeDisplay)
+		request.getAttribute(WebKeys.THEME_DISPLAY);
+		USMember member = new USMemberImpl();
+		
+		member.setCompanyId(themeDisplay.getCompanyId());  // portal 
+		member.setGroupId(themeDisplay.getScopeGroupId()); // comunidad
+		
+		// Datos formulario
+		member.setMemberFirstName(ParamUtil.getString(request, "userFirstName"));
+		member.setMemberLastName(ParamUtil.getString(request, "userLastName"));
+		member.setMemberPhoneNumber(ParamUtil.getString(request, "userPhoneNumber"));
+		member.setMemberEmail(ParamUtil.getString(request, "userEmail"));
+		
+		// Datos calendario
+		Integer day = ParamUtil.getInteger(request, "dateDay");
+		Integer month = ParamUtil.getInteger(request, "dateMonth");
+		Integer year = ParamUtil.getInteger(request, "dateYear");
+		
+		// Creando la fecha: java.util.Date or java.sql.Date
+		Date finalDate = PortalUtil.getDate(month, day, year, new PortalException());
+		
+		member.setMemberBirthDate(new java.sql.Date(finalDate.getTime()));
+		//member.setMemberBirthDate(finalDate);
+		
+		return member;
+	}
+	
+	
+}

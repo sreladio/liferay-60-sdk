@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.izertis.ipc.Ball&apos; to &apos;Pitch&apos;&#x0A;- Original project: &apos;ipc-baseball-portlet&apos;&#x0A;- Original element: &apos;com.izertis.ipc.Ball&apos;&#x0A;- Renamed element: &apos;com.izertis.ipc.Pitch&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Ball&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/docroot\/WEB-INF\/src&lt;com.izertis.ipc{Ball.java[Ball" matchStrategy="1" name="Pitch" qualified="false" references="true" similarDeclarations="false" stamp="1359451163642" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.oldschool.internet.productregistration.service.PRProductLocalServiceUtil"/>
+<fullyQualifiedTypeName name="com.liferay.portal.kernel.util.WebKeys"/>
+<fullyQualifiedTypeName name="com.liferay.portal.theme.ThemeDisplay"/>
+<fullyQualifiedTypeName name="com.oldschool.internet.productregistration.model.impl.PRProductImpl"/>
+<fullyQualifiedTypeName name="com.oldschool.internet.productregistration.model.PRProduct"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="java.sql.Date"/>
+<fullyQualifiedTypeName name="com.liferay.portal.kernel.exception.PortalException"/>
+<fullyQualifiedTypeName name="javax.portlet.RenderRequest"/>
+<fullyQualifiedTypeName name="com.liferay.portal.kernel.exception.SystemException"/>
+<fullyQualifiedTypeName name="java.util.Collections"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.oldschool.user.registration.NoSuchMemberException"/>
+<fullyQualifiedTypeName name="com.liferay.portal.model.ResourceConstants"/>
+<fullyQualifiedTypeName name="com.liferay.util.bridges.mvc.MVCPortlet"/>
+<fullyQualifiedTypeName name="javax.portlet.ActionRequest"/>
+<fullyQualifiedTypeName name="javax.portlet.ActionResponse"/>
+<fullyQualifiedTypeName name="com.liferay.portal.kernel.util.ParamUtil"/>
+<fullyQualifiedTypeName name="com.liferay.portal.kernel.util.Validator"/>
+<fullyQualifiedTypeName name="com.oldschool.user.registration.model.USMember"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="com.liferay.portal.kernel.servlet.SessionMessages"/>
+<fullyQualifiedTypeName name="com.liferay.portal.kernel.servlet.SessionErrors"/>
+<fullyQualifiedTypeName name="com.oldschool.user.registration.model.USPhoneNumber"/>
+<fullyQualifiedTypeName name="com.oldschool.user.registration.service.USMemberLocalServiceUtil"/>
+</qualifiedTypeNameHistroy>

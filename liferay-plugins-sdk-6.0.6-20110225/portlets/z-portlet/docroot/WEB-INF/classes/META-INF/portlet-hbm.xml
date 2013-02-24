@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping default-lazy="false" auto-import="false">
+	<import class="com.z.registration.model.Member" />
+	<import class="com.z.registration.model.PohoneNumber" />
+	<import class="prueba.model.Member" />
+	<import class="prueba.model.PhoneNumber" />
+	<class name="com.z.registration.model.impl.MemberImpl" table="Z_Member">
+		<cache usage="read-write" />
+		<id name="memberId" type="long">
+			<generator class="assigned" />
+		</id>
+		<property name="memberFirstName" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="memberLastName" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="memberPhoneNumber" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="memberEmail" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="memberBirthDate" type="org.hibernate.type.TimestampType" />
+		<property name="companyId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="groupId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+	</class>
+	<class name="com.z.registration.model.impl.PohoneNumberImpl" table="Z_PohoneNumber">
+		<cache usage="read-write" />
+		<id name="foreingMemberId" type="long">
+			<generator class="assigned" />
+		</id>
+	</class>
+	<class name="prueba.model.impl.MemberImpl" table="Z_Member">
+		<cache usage="read-write" />
+		<id name="memberId" type="long">
+			<generator class="assigned" />
+		</id>
+		<property name="memberFirstName" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="memberLastName" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="memberPhoneNumber" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+	</class>
+	<class name="prueba.model.impl.PhoneNumberImpl" table="Z_PhoneNumber">
+		<cache usage="read-write" />
+		<id name="numberId" type="java.lang.String">
+			<generator class="assigned" />
+		</id>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,15 @@
+create table Z_Member (
+	memberId LONG not null primary key,
+	memberFirstName VARCHAR(75) null,
+	memberLastName VARCHAR(75) null,
+	memberPhoneNumber VARCHAR(75) null,
+	memberEmail VARCHAR(75) null,
+	memberBirthDate DATE null,
+	companyId LONG,
+	groupId LONG
+);
+
+create table Z_PohoneNumber (
+	foreingMemberId LONG not null primary key,
+	number_ VARCHAR(75) null
+);

@@ -1,0 +1,121 @@
+/**
+ * Copyright (c) 2000-2011 Liferay, Inc. All rights reserved.
+ *
+ * This library is free software; you can redistribute it and/or modify it under
+ * the terms of the GNU Lesser General Public License as published by the Free
+ * Software Foundation; either version 2.1 of the License, or (at your option)
+ * any later version.
+ *
+ * This library is distributed in the hope that it will be useful, but WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more
+ * details.
+ */
+
+package com.z.registration.model;
+
+/**
+ * <p>
+ * This class is a wrapper for {@link PohoneNumber}.
+ * </p>
+ *
+ * @author    Sr. Eladio
+ * @see       PohoneNumber
+ * @generated
+ */
+public class PohoneNumberWrapper implements PohoneNumber {
+	public PohoneNumberWrapper(PohoneNumber pohoneNumber) {
+		_pohoneNumber = pohoneNumber;
+	}
+
+	public long getPrimaryKey() {
+		return _pohoneNumber.getPrimaryKey();
+	}
+
+	public void setPrimaryKey(long pk) {
+		_pohoneNumber.setPrimaryKey(pk);
+	}
+
+	public long getForeingMemberId() {
+		return _pohoneNumber.getForeingMemberId();
+	}
+
+	public void setForeingMemberId(long foreingMemberId) {
+		_pohoneNumber.setForeingMemberId(foreingMemberId);
+	}
+
+	public java.lang.String getNumber() {
+		return _pohoneNumber.getNumber();
+	}
+
+	public void setNumber(java.lang.String number) {
+		_pohoneNumber.setNumber(number);
+	}
+
+	public PohoneNumber toEscapedModel() {
+		return _pohoneNumber.toEscapedModel();
+	}
+
+	public boolean isNew() {
+		return _pohoneNumber.isNew();
+	}
+
+	public void setNew(boolean n) {
+		_pohoneNumber.setNew(n);
+	}
+
+	public boolean isCachedModel() {
+		return _pohoneNumber.isCachedModel();
+	}
+
+	public void setCachedModel(boolean cachedModel) {
+		_pohoneNumber.setCachedModel(cachedModel);
+	}
+
+	public boolean isEscapedModel() {
+		return _pohoneNumber.isEscapedModel();
+	}
+
+	public void setEscapedModel(boolean escapedModel) {
+		_pohoneNumber.setEscapedModel(escapedModel);
+	}
+
+	public java.io.Serializable getPrimaryKeyObj() {
+		return _pohoneNumber.getPrimaryKeyObj();
+	}
+
+	public com.liferay.portlet.expando.model.ExpandoBridge getExpandoBridge() {
+		return _pohoneNumber.getExpandoBridge();
+	}
+
+	public void setExpandoBridgeAttributes(
+		com.liferay.portal.service.ServiceContext serviceContext) {
+		_pohoneNumber.setExpandoBridgeAttributes(serviceContext);
+	}
+
+	public java.lang.Object clone() {
+		return _pohoneNumber.clone();
+	}
+
+	public int compareTo(PohoneNumber pohoneNumber) {
+		return _pohoneNumber.compareTo(pohoneNumber);
+	}
+
+	public int hashCode() {
+		return _pohoneNumber.hashCode();
+	}
+
+	public java.lang.String toString() {
+		return _pohoneNumber.toString();
+	}
+
+	public java.lang.String toXmlString() {
+		return _pohoneNumber.toXmlString();
+	}
+
+	public PohoneNumber getWrappedPohoneNumber() {
+		return _pohoneNumber;
+	}
+
+	private PohoneNumber _pohoneNumber;
+}

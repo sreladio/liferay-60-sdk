@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder
+6.0.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_6_0_0.dtd">
+
+<service-builder package-path="com.oldschool.user.registration"> 
+	<author>Sr. Eladio</author>
+	<namespace>US</namespace> 
+	<entity name="USMember" local-service="true" remote-service="false">
+		
+		<column name="memberId" type="long" primary="true" />
+		<column name="memberFirstName" type="String" />
+		<column name="memberLastName" type="String" />
+		<column name="memberPhoneNumber" type="Collection" entity="USPhoneNumber" mapping-key="memberId" />
+		<column name="memberEmail" type="String" />
+		<column name="memberBirthDate" type="Date" />
+		
+		<column name="companyId" type="long" />
+		<column name="groupId" type="long" />
+		
+		<order by="asc">
+			<order-column name="memberLastName" />
+		</order>
+		
+		<finder name="G_PN" return-type="Collection">
+			<finder-column name="groupId" />
+			<finder-column name="memberLastName" />
+		</finder>
+
+		<finder name="GroupId" return-type="Collection">
+			<finder-column name="groupId" />
+		</finder>
+		
+		<finder name="CompanyId" return-type="Collection">
+			<finder-column name="companyId" />
+		</finder>
+	</entity>
+	
+	<entity name="USPhoneNumber" local-service="true" remote-service="false">
+		<column name="numberId" type="String" primary="true"></column>
+		<column name="memberId" type="long" />
+		
+		<order by="asc">
+			<order-column name="numberId"></order-column>
+		</order>
+	</entity>
+	
+</service-builder>

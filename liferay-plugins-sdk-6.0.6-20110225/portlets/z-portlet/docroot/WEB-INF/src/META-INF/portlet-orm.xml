@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm http://java.sun.com/xml/ns/persistence/orm_1_0.xsd">
+	<persistence-unit-metadata>
+		<xml-mapping-metadata-complete/>
+		<persistence-unit-defaults>
+			<access>PROPERTY</access>
+		</persistence-unit-defaults>
+	</persistence-unit-metadata>
+	<mapped-superclass class="com.z.registration.model.impl.MemberModelImpl">
+		<attributes>
+			<id name="memberId" />
+			<basic name="memberFirstName" />
+			<basic name="memberLastName" />
+			<basic name="memberPhoneNumber" />
+			<basic name="memberEmail" />
+			<basic name="memberBirthDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="companyId" />
+			<basic name="groupId" />
+			<transient name="primaryKey" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="com.z.registration.model.impl.PohoneNumberModelImpl">
+		<attributes>
+			<id name="foreingMemberId" />
+			<transient name="primaryKey" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="prueba.model.impl.MemberModelImpl">
+		<attributes>
+			<id name="memberId" />
+			<basic name="memberFirstName" />
+			<basic name="memberLastName" />
+			<basic name="memberPhoneNumber" />
+			<transient name="primaryKey" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="prueba.model.impl.PhoneNumberModelImpl">
+		<attributes>
+			<id name="numberId" />
+			<transient name="primaryKey" />
+		</attributes>
+	</mapped-superclass>
+	<entity class="com.z.registration.model.impl.MemberImpl" name="Member">
+		<table name="Z_Member" />
+		<attributes />
+	</entity>
+	<entity class="com.z.registration.model.impl.PohoneNumberImpl" name="PohoneNumber">
+		<table name="Z_PohoneNumber" />
+		<attributes />
+	</entity>
+	<entity class="prueba.model.impl.MemberImpl" name="Member">
+		<table name="Z_Member" />
+		<attributes />
+	</entity>
+	<entity class="prueba.model.impl.PhoneNumberImpl" name="PhoneNumber">
+		<table name="Z_PhoneNumber" />
+		<attributes />
+	</entity>
+</entity-mappings>

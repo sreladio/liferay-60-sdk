@@ -1,0 +1,713 @@
+/**
+ * Copyright (c) 2000-2011 Liferay, Inc. All rights reserved.
+ *
+ * This library is free software; you can redistribute it and/or modify it under
+ * the terms of the GNU Lesser General Public License as published by the Free
+ * Software Foundation; either version 2.1 of the License, or (at your option)
+ * any later version.
+ *
+ * This library is distributed in the hope that it will be useful, but WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more
+ * details.
+ */
+
+package z.prueba.service.persistence;
+
+import com.liferay.portal.kernel.bean.PortletBeanLocatorUtil;
+import com.liferay.portal.kernel.dao.orm.DynamicQuery;
+import com.liferay.portal.kernel.exception.SystemException;
+import com.liferay.portal.kernel.util.OrderByComparator;
+import com.liferay.portal.service.ServiceContext;
+
+import z.prueba.model.Member;
+
+import java.util.List;
+
+/**
+ * The persistence utility for the member service. This utility wraps {@link MemberPersistenceImpl} and provides direct access to the database for CRUD operations. This utility should only be used by the service layer, as it must operate within a transaction. Never access this utility in a JSP, controller, model, or other front-end class.
+ *
+ * <p>
+ * Never modify this class directly. Modify <code>service.xml</code> and rerun ServiceBuilder to regenerate this class.
+ * </p>
+ *
+ * <p>
+ * Caching information and settings can be found in <code>portal.properties</code>
+ * </p>
+ *
+ * @author Sr. Eladio
+ * @see MemberPersistence
+ * @see MemberPersistenceImpl
+ * @generated
+ */
+public class MemberUtil {
+	/**
+	 * @see com.liferay.portal.service.persistence.BasePersistence#clearCache()
+	 */
+	public static void clearCache() {
+		getPersistence().clearCache();
+	}
+
+	/**
+	 * @see com.liferay.portal.service.persistence.BasePersistence#clearCache(com.liferay.portal.model.BaseModel)
+	 */
+	public static void clearCache(Member member) {
+		getPersistence().clearCache(member);
+	}
+
+	/**
+	 * @see com.liferay.portal.service.persistence.BasePersistence#countWithDynamicQuery(DynamicQuery)
+	 */
+	public long countWithDynamicQuery(DynamicQuery dynamicQuery)
+		throws SystemException {
+		return getPersistence().countWithDynamicQuery(dynamicQuery);
+	}
+
+	/**
+	 * @see com.liferay.portal.service.persistence.BasePersistence#findWithDynamicQuery(DynamicQuery)
+	 */
+	public static List<Member> findWithDynamicQuery(DynamicQuery dynamicQuery)
+		throws SystemException {
+		return getPersistence().findWithDynamicQuery(dynamicQuery);
+	}
+
+	/**
+	 * @see com.liferay.portal.service.persistence.BasePersistence#findWithDynamicQuery(DynamicQuery, int, int)
+	 */
+	public static List<Member> findWithDynamicQuery(DynamicQuery dynamicQuery,
+		int start, int end) throws SystemException {
+		return getPersistence().findWithDynamicQuery(dynamicQuery, start, end);
+	}
+
+	/**
+	 * @see com.liferay.portal.service.persistence.BasePersistence#findWithDynamicQuery(DynamicQuery, int, int, OrderByComparator)
+	 */
+	public static List<Member> findWithDynamicQuery(DynamicQuery dynamicQuery,
+		int start, int end, OrderByComparator orderByComparator)
+		throws SystemException {
+		return getPersistence()
+				   .findWithDynamicQuery(dynamicQuery, start, end,
+			orderByComparator);
+	}
+
+	/**
+	 * @see com.liferay.portal.service.persistence.BasePersistence#remove(com.liferay.portal.model.BaseModel)
+	 */
+	public static Member remove(Member member) throws SystemException {
+		return getPersistence().remove(member);
+	}
+
+	/**
+	 * @see com.liferay.portal.service.persistence.BasePersistence#update(com.liferay.portal.model.BaseModel, boolean)
+	 */
+	public static Member update(Member member, boolean merge)
+		throws SystemException {
+		return getPersistence().update(member, merge);
+	}
+
+	/**
+	 * @see com.liferay.portal.service.persistence.BasePersistence#update(com.liferay.portal.model.BaseModel, boolean, ServiceContext)
+	 */
+	public static Member update(Member member, boolean merge,
+		ServiceContext serviceContext) throws SystemException {
+		return getPersistence().update(member, merge, serviceContext);
+	}
+
+	/**
+	* Caches the member in the entity cache if it is enabled.
+	*
+	* @param member the member to cache
+	*/
+	public static void cacheResult(z.prueba.model.Member member) {
+		getPersistence().cacheResult(member);
+	}
+
+	/**
+	* Caches the members in the entity cache if it is enabled.
+	*
+	* @param members the members to cache
+	*/
+	public static void cacheResult(
+		java.util.List<z.prueba.model.Member> members) {
+		getPersistence().cacheResult(members);
+	}
+
+	/**
+	* Creates a new member with the primary key. Does not add the member to the database.
+	*
+	* @param memberId the primary key for the new member
+	* @return the new member
+	*/
+	public static z.prueba.model.Member create(long memberId) {
+		return getPersistence().create(memberId);
+	}
+
+	/**
+	* Removes the member with the primary key from the database. Also notifies the appropriate model listeners.
+	*
+	* @param memberId the primary key of the member to remove
+	* @return the member that was removed
+	* @throws z.prueba.NoSuchMemberException if a member with the primary key could not be found
+	* @throws SystemException if a system exception occurred
+	*/
+	public static z.prueba.model.Member remove(long memberId)
+		throws com.liferay.portal.kernel.exception.SystemException,
+			z.prueba.NoSuchMemberException {
+		return getPersistence().remove(memberId);
+	}
+
+	public static z.prueba.model.Member updateImpl(
+		z.prueba.model.Member member, boolean merge)
+		throws com.liferay.portal.kernel.exception.SystemException {
+		return getPersistence().updateImpl(member, merge);
+	}
+
+	/**
+	* Finds the member with the primary key or throws a {@link z.prueba.NoSuchMemberException} if it could not be found.
+	*
+	* @param memberId the primary key of the member to find
+	* @return the member
+	* @throws z.prueba.NoSuchMemberException if a member with the primary key could not be found
+	* @throws SystemException if a system exception occurred
+	*/
+	public static z.prueba.model.Member findByPrimaryKey(long memberId)
+		throws com.liferay.portal.kernel.exception.SystemException,
+			z.prueba.NoSuchMemberException {
+		return getPersistence().findByPrimaryKey(memberId);
+	}
+
+	/**
+	* Finds the member with the primary key or returns <code>null</code> if it could not be found.
+	*
+	* @param memberId the primary key of the member to find
+	* @return the member, or <code>null</code> if a member with the primary key could not be found
+	* @throws SystemException if a system exception occurred
+	*/
+	public static z.prueba.model.Member fetchByPrimaryKey(long memberId)
+		throws com.liferay.portal.kernel.exception.SystemException {
+		return getPersistence().fetchByPrimaryKey(memberId);
+	}
+
+	/**
+	* Finds all the members where groupId = &#63; and memberLastName = &#63;.
+	*
+	* @param groupId the group id to search with
+	* @param memberLastName the member last name to search with
+	* @return the matching members
+	* @throws SystemException if a system exception occurred
+	*/
+	public static java.util.List<z.prueba.model.Member> findByG_PN(
+		long groupId, java.lang.String memberLastName)
+		throws com.liferay.portal.kernel.exception.SystemException {
+		return getPersistence().findByG_PN(groupId, memberLastName);
+	}
+
+	/**
+	* Finds a range of all the members where groupId = &#63; and memberLastName = &#63;.
+	*
+	* <p>
+	* Useful when paginating results. Returns a maximum of <code>end - start</code> instances. <code>start</code> and <code>end</code> are not primary keys, they are indexes in the result set. Thus, <code>0</code> refers to the first result in the set. Setting both <code>start</code> and <code>end</code> to {@link com.liferay.portal.kernel.dao.orm.QueryUtil#ALL_POS} will return the full result set.
+	* </p>
+	*
+	* @param groupId the group id to search with
+	* @param memberLastName the member last name to search with
+	* @param start the lower bound of the range of members to return
+	* @param end the upper bound of the range of members to return (not inclusive)
+	* @return the range of matching members
+	* @throws SystemException if a system exception occurred
+	*/
+	public static java.util.List<z.prueba.model.Member> findByG_PN(
+		long groupId, java.lang.String memberLastName, int start, int end)
+		throws com.liferay.portal.kernel.exception.SystemException {
+		return getPersistence().findByG_PN(groupId, memberLastName, start, end);
+	}
+
+	/**
+	* Finds an ordered range of all the members where groupId = &#63; and memberLastName = &#63;.
+	*
+	* <p>
+	* Useful when paginating results. Returns a maximum of <code>end - start</code> instances. <code>start</code> and <code>end</code> are not primary keys, they are indexes in the result set. Thus, <code>0</code> refers to the first result in the set. Setting both <code>start</code> and <code>end</code> to {@link com.liferay.portal.kernel.dao.orm.QueryUtil#ALL_POS} will return the full result set.
+	* </p>
+	*
+	* @param groupId the group id to search with
+	* @param memberLastName the member last name to search with
+	* @param start the lower bound of the range of members to return
+	* @param end the upper bound of the range of members to return (not inclusive)
+	* @param orderByComparator the comparator to order the results by
+	* @return the ordered range of matching members
+	* @throws SystemException if a system exception occurred
+	*/
+	public static java.util.List<z.prueba.model.Member> findByG_PN(
+		long groupId, java.lang.String memberLastName, int start, int end,
+		com.liferay.portal.kernel.util.OrderByComparator orderByComparator)
+		throws com.liferay.portal.kernel.exception.SystemException {
+		return getPersistence()
+				   .findByG_PN(groupId, memberLastName, start, end,
+			orderByComparator);
+	}
+
+	/**
+	* Finds the first member in the ordered set where groupId = &#63; and memberLastName = &#63;.
+	*
+	* <p>
+	* Useful when paginating results. Returns a maximum of <code>end - start</code> instances. <code>start</code> and <code>end</code> are not primary keys, they are indexes in the result set. Thus, <code>0</code> refers to the first result in the set. Setting both <code>start</code> and <code>end</code> to {@link com.liferay.portal.kernel.dao.orm.QueryUtil#ALL_POS} will return the full result set.
+	* </p>
+	*
+	* @param groupId the group id to search with
+	* @param memberLastName the member last name to search with
+	* @param orderByComparator the comparator to order the set by
+	* @return the first matching member
+	* @throws z.prueba.NoSuchMemberException if a matching member could not be found
+	* @throws SystemException if a system exception occurred
+	*/
+	public static z.prueba.model.Member findByG_PN_First(long groupId,
+		java.lang.String memberLastName,
+		com.liferay.portal.kernel.util.OrderByComparator orderByComparator)
+		throws com.liferay.portal.kernel.exception.SystemException,
+			z.prueba.NoSuchMemberException {
+		return getPersistence()
+				   .findByG_PN_First(groupId, memberLastName, orderByComparator);
+	}
+
+	/**
+	* Finds the last member in the ordered set where groupId = &#63; and memberLastName = &#63;.
+	*
+	* <p>
+	* Useful when paginating results. Returns a maximum of <code>end - start</code> instances. <code>start</code> and <code>end</code> are not primary keys, they are indexes in the result set. Thus, <code>0</code> refers to the first result in the set. Setting both <code>start</code> and <code>end</code> to {@link com.liferay.portal.kernel.dao.orm.QueryUtil#ALL_POS} will return the full result set.
+	* </p>
+	*
+	* @param groupId the group id to search with
+	* @param memberLastName the member last name to search with
+	* @param orderByComparator the comparator to order the set by
+	* @return the last matching member
+	* @throws z.prueba.NoSuchMemberException if a matching member could not be found
+	* @throws SystemException if a system exception occurred
+	*/
+	public static z.prueba.model.Member findByG_PN_Last(long groupId,
+		java.lang.String memberLastName,
+		com.liferay.portal.kernel.util.OrderByComparator orderByComparator)
+		throws com.liferay.portal.kernel.exception.SystemException,
+			z.prueba.NoSuchMemberException {
+		return getPersistence()
+				   .findByG_PN_Last(groupId, memberLastName, orderByComparator);
+	}
+
+	/**
+	* Finds the members before and after the current member in the ordered set where groupId = &#63; and memberLastName = &#63;.
+	*
+	* <p>
+	* Useful when paginating results. Returns a maximum of <code>end - start</code> instances. <code>start</code> and <code>end</code> are not primary keys, they are indexes in the result set. Thus, <code>0</code> refers to the first result in the set. Setting both <code>start</code> and <code>end</code> to {@link com.liferay.portal.kernel.dao.orm.QueryUtil#ALL_POS} will return the full result set.
+	* </p>
+	*
+	* @param memberId the primary key of the current member
+	* @param groupId the group id to search with
+	* @param memberLastName the member last name to search with
+	* @param orderByComparator the comparator to order the set by
+	* @return the previous, current, and next member
+	* @throws z.prueba.NoSuchMemberException if a member with the primary key could not be found
+	* @throws SystemException if a system exception occurred
+	*/
+	public static z.prueba.model.Member[] findByG_PN_PrevAndNext(
+		long memberId, long groupId, java.lang.String memberLastName,
+		com.liferay.portal.kernel.util.OrderByComparator orderByComparator)
+		throws com.liferay.portal.kernel.exception.SystemException,
+			z.prueba.NoSuchMemberException {
+		return getPersistence()
+				   .findByG_PN_PrevAndNext(memberId, groupId, memberLastName,
+			orderByComparator);
+	}
+
+	/**
+	* Finds all the members where groupId = &#63;.
+	*
+	* @param groupId the group id to search with
+	* @return the matching members
+	* @throws SystemException if a system exception occurred
+	*/
+	public static java.util.List<z.prueba.model.Member> findByGroupId(
+		long groupId)
+		throws com.liferay.portal.kernel.exception.SystemException {
+		return getPersistence().findByGroupId(groupId);
+	}
+
+	/**
+	* Finds a range of all the members where groupId = &#63;.
+	*
+	* <p>
+	* Useful when paginating results. Returns a maximum of <code>end - start</code> instances. <code>start</code> and <code>end</code> are not primary keys, they are indexes in the result set. Thus, <code>0</code> refers to the first result in the set. Setting both <code>start</code> and <code>end</code> to {@link com.liferay.portal.kernel.dao.orm.QueryUtil#ALL_POS} will return the full result set.
+	* </p>
+	*
+	* @param groupId the group id to search with
+	* @param start the lower bound of the range of members to return
+	* @param end the upper bound of the range of members to return (not inclusive)
+	* @return the range of matching members
+	* @throws SystemException if a system exception occurred
+	*/
+	public static java.util.List<z.prueba.model.Member> findByGroupId(
+		long groupId, int start, int end)
+		throws com.liferay.portal.kernel.exception.SystemException {
+		return getPersistence().findByGroupId(groupId, start, end);
+	}
+
+	/**
+	* Finds an ordered range of all the members where groupId = &#63;.
+	*
+	* <p>
+	* Useful when paginating results. Returns a maximum of <code>end - start</code> instances. <code>start</code> and <code>end</code> are not primary keys, they are indexes in the result set. Thus, <code>0</code> refers to the first result in the set. Setting both <code>start</code> and <code>end</code> to {@link com.liferay.portal.kernel.dao.orm.QueryUtil#ALL_POS} will return the full result set.
+	* </p>
+	*
+	* @param groupId the group id to search with
+	* @param start the lower bound of the range of members to return
+	* @param end the upper bound of the range of members to return (not inclusive)
+	* @param orderByComparator the comparator to order the results by
+	* @return the ordered range of matching members
+	* @throws SystemException if a system exception occurred
+	*/
+	public static java.util.List<z.prueba.model.Member> findByGroupId(
+		long groupId, int start, int end,
+		com.liferay.portal.kernel.util.OrderByComparator orderByComparator)
+		throws com.liferay.portal.kernel.exception.SystemException {
+		return getPersistence()
+				   .findByGroupId(groupId, start, end, orderByComparator);
+	}
+
+	/**
+	* Finds the first member in the ordered set where groupId = &#63;.
+	*
+	* <p>
+	* Useful when paginating results. Returns a maximum of <code>end - start</code> instances. <code>start</code> and <code>end</code> are not primary keys, they are indexes in the result set. Thus, <code>0</code> refers to the first result in the set. Setting both <code>start</code> and <code>end</code> to {@link com.liferay.portal.kernel.dao.orm.QueryUtil#ALL_POS} will return the full result set.
+	* </p>
+	*
+	* @param groupId the group id to search with
+	* @param orderByComparator the comparator to order the set by
+	* @return the first matching member
+	* @throws z.prueba.NoSuchMemberException if a matching member could not be found
+	* @throws SystemException if a system exception occurred
+	*/
+	public static z.prueba.model.Member findByGroupId_First(long groupId,
+		com.liferay.portal.kernel.util.OrderByComparator orderByComparator)
+		throws com.liferay.portal.kernel.exception.SystemException,
+			z.prueba.NoSuchMemberException {
+		return getPersistence().findByGroupId_First(groupId, orderByComparator);
+	}
+
+	/**
+	* Finds the last member in the ordered set where groupId = &#63;.
+	*
+	* <p>
+	* Useful when paginating results. Returns a maximum of <code>end - start</code> instances. <code>start</code> and <code>end</code> are not primary keys, they are indexes in the result set. Thus, <code>0</code> refers to the first result in the set. Setting both <code>start</code> and <code>end</code> to {@link com.liferay.portal.kernel.dao.orm.QueryUtil#ALL_POS} will return the full result set.
+	* </p>
+	*
+	* @param groupId the group id to search with
+	* @param orderByComparator the comparator to order the set by
+	* @return the last matching member
+	* @throws z.prueba.NoSuchMemberException if a matching member could not be found
+	* @throws SystemException if a system exception occurred
+	*/
+	public static z.prueba.model.Member findByGroupId_Last(long groupId,
+		com.liferay.portal.kernel.util.OrderByComparator orderByComparator)
+		throws com.liferay.portal.kernel.exception.SystemException,
+			z.prueba.NoSuchMemberException {
+		return getPersistence().findByGroupId_Last(groupId, orderByComparator);
+	}
+
+	/**
+	* Finds the members before and after the current member in the ordered set where groupId = &#63;.
+	*
+	* <p>
+	* Useful when paginating results. Returns a maximum of <code>end - start</code> instances. <code>start</code> and <code>end</code> are not primary keys, they are indexes in the result set. Thus, <code>0</code> refers to the first result in the set. Setting both <code>start</code> and <code>end</code> to {@link com.liferay.portal.kernel.dao.orm.QueryUtil#ALL_POS} will return the full result set.
+	* </p>
+	*
+	* @param memberId the primary key of the current member
+	* @param groupId the group id to search with
+	* @param orderByComparator the comparator to order the set by
+	* @return the previous, current, and next member
+	* @throws z.prueba.NoSuchMemberException if a member with the primary key could not be found
+	* @throws SystemException if a system exception occurred
+	*/
+	public static z.prueba.model.Member[] findByGroupId_PrevAndNext(
+		long memberId, long groupId,
+		com.liferay.portal.kernel.util.OrderByComparator orderByComparator)
+		throws com.liferay.portal.kernel.exception.SystemException,
+			z.prueba.NoSuchMemberException {
+		return getPersistence()
+				   .findByGroupId_PrevAndNext(memberId, groupId,
+			orderByComparator);
+	}
+
+	/**
+	* Finds all the members where companyId = &#63;.
+	*
+	* @param companyId the company id to search with
+	* @return the matching members
+	* @throws SystemException if a system exception occurred
+	*/
+	public static java.util.List<z.prueba.model.Member> findByCompanyId(
+		long companyId)
+		throws com.liferay.portal.kernel.exception.SystemException {
+		return getPersistence().findByCompanyId(companyId);
+	}
+
+	/**
+	* Finds a range of all the members where companyId = &#63;.
+	*
+	* <p>
+	* Useful when paginating results. Returns a maximum of <code>end - start</code> instances. <code>start</code> and <code>end</code> are not primary keys, they are indexes in the result set. Thus, <code>0</code> refers to the first result in the set. Setting both <code>start</code> and <code>end</code> to {@link com.liferay.portal.kernel.dao.orm.QueryUtil#ALL_POS} will return the full result set.
+	* </p>
+	*
+	* @param companyId the company id to search with
+	* @param start the lower bound of the range of members to return
+	* @param end the upper bound of the range of members to return (not inclusive)
+	* @return the range of matching members
+	* @throws SystemException if a system exception occurred
+	*/
+	public static java.util.List<z.prueba.model.Member> findByCompanyId(
+		long companyId, int start, int end)
+		throws com.liferay.portal.kernel.exception.SystemException {
+		return getPersistence().findByCompanyId(companyId, start, end);
+	}
+
+	/**
+	* Finds an ordered range of all the members where companyId = &#63;.
+	*
+	* <p>
+	* Useful when paginating results. Returns a maximum of <code>end - start</code> instances. <code>start</code> and <code>end</code> are not primary keys, they are indexes in the result set. Thus, <code>0</code> refers to the first result in the set. Setting both <code>start</code> and <code>end</code> to {@link com.liferay.portal.kernel.dao.orm.QueryUtil#ALL_POS} will return the full result set.
+	* </p>
+	*
+	* @param companyId the company id to search with
+	* @param start the lower bound of the range of members to return
+	* @param end the upper bound of the range of members to return (not inclusive)
+	* @param orderByComparator the comparator to order the results by
+	* @return the ordered range of matching members
+	* @throws SystemException if a system exception occurred
+	*/
+	public static java.util.List<z.prueba.model.Member> findByCompanyId(
+		long companyId, int start, int end,
+		com.liferay.portal.kernel.util.OrderByComparator orderByComparator)
+		throws com.liferay.portal.kernel.exception.SystemException {
+		return getPersistence()
+				   .findByCompanyId(companyId, start, end, orderByComparator);
+	}
+
+	/**
+	* Finds the first member in the ordered set where companyId = &#63;.
+	*
+	* <p>
+	* Useful when paginating results. Returns a maximum of <code>end - start</code> instances. <code>start</code> and <code>end</code> are not primary keys, they are indexes in the result set. Thus, <code>0</code> refers to the first result in the set. Setting both <code>start</code> and <code>end</code> to {@link com.liferay.portal.kernel.dao.orm.QueryUtil#ALL_POS} will return the full result set.
+	* </p>
+	*
+	* @param companyId the company id to search with
+	* @param orderByComparator the comparator to order the set by
+	* @return the first matching member
+	* @throws z.prueba.NoSuchMemberException if a matching member could not be found
+	* @throws SystemException if a system exception occurred
+	*/
+	public static z.prueba.model.Member findByCompanyId_First(long companyId,
+		com.liferay.portal.kernel.util.OrderByComparator orderByComparator)
+		throws com.liferay.portal.kernel.exception.SystemException,
+			z.prueba.NoSuchMemberException {
+		return getPersistence()
+				   .findByCompanyId_First(companyId, orderByComparator);
+	}
+
+	/**
+	* Finds the last member in the ordered set where companyId = &#63;.
+	*
+	* <p>
+	* Useful when paginating results. Returns a maximum of <code>end - start</code> instances. <code>start</code> and <code>end</code> are not primary keys, they are indexes in the result set. Thus, <code>0</code> refers to the first result in the set. Setting both <code>start</code> and <code>end</code> to {@link com.liferay.portal.kernel.dao.orm.QueryUtil#ALL_POS} will return the full result set.
+	* </p>
+	*
+	* @param companyId the company id to search with
+	* @param orderByComparator the comparator to order the set by
+	* @return the last matching member
+	* @throws z.prueba.NoSuchMemberException if a matching member could not be found
+	* @throws SystemException if a system exception occurred
+	*/
+	public static z.prueba.model.Member findByCompanyId_Last(long companyId,
+		com.liferay.portal.kernel.util.OrderByComparator orderByComparator)
+		throws com.liferay.portal.kernel.exception.SystemException,
+			z.prueba.NoSuchMemberException {
+		return getPersistence()
+				   .findByCompanyId_Last(companyId, orderByComparator);
+	}
+
+	/**
+	* Finds the members before and after the current member in the ordered set where companyId = &#63;.
+	*
+	* <p>
+	* Useful when paginating results. Returns a maximum of <code>end - start</code> instances. <code>start</code> and <code>end</code> are not primary keys, they are indexes in the result set. Thus, <code>0</code> refers to the first result in the set. Setting both <code>start</code> and <code>end</code> to {@link com.liferay.portal.kernel.dao.orm.QueryUtil#ALL_POS} will return the full result set.
+	* </p>
+	*
+	* @param memberId the primary key of the current member
+	* @param companyId the company id to search with
+	* @param orderByComparator the comparator to order the set by
+	* @return the previous, current, and next member
+	* @throws z.prueba.NoSuchMemberException if a member with the primary key could not be found
+	* @throws SystemException if a system exception occurred
+	*/
+	public static z.prueba.model.Member[] findByCompanyId_PrevAndNext(
+		long memberId, long companyId,
+		com.liferay.portal.kernel.util.OrderByComparator orderByComparator)
+		throws com.liferay.portal.kernel.exception.SystemException,
+			z.prueba.NoSuchMemberException {
+		return getPersistence()
+				   .findByCompanyId_PrevAndNext(memberId, companyId,
+			orderByComparator);
+	}
+
+	/**
+	* Finds all the members.
+	*
+	* @return the members
+	* @throws SystemException if a system exception occurred
+	*/
+	public static java.util.List<z.prueba.model.Member> findAll()
+		throws com.liferay.portal.kernel.exception.SystemException {
+		return getPersistence().findAll();
+	}
+
+	/**
+	* Finds a range of all the members.
+	*
+	* <p>
+	* Useful when paginating results. Returns a maximum of <code>end - start</code> instances. <code>start</code> and <code>end</code> are not primary keys, they are indexes in the result set. Thus, <code>0</code> refers to the first result in the set. Setting both <code>start</code> and <code>end</code> to {@link com.liferay.portal.kernel.dao.orm.QueryUtil#ALL_POS} will return the full result set.
+	* </p>
+	*
+	* @param start the lower bound of the range of members to return
+	* @param end the upper bound of the range of members to return (not inclusive)
+	* @return the range of members
+	* @throws SystemException if a system exception occurred
+	*/
+	public static java.util.List<z.prueba.model.Member> findAll(int start,
+		int end) throws com.liferay.portal.kernel.exception.SystemException {
+		return getPersistence().findAll(start, end);
+	}
+
+	/**
+	* Finds an ordered range of all the members.
+	*
+	* <p>
+	* Useful when paginating results. Returns a maximum of <code>end - start</code> instances. <code>start</code> and <code>end</code> are not primary keys, they are indexes in the result set. Thus, <code>0</code> refers to the first result in the set. Setting both <code>start</code> and <code>end</code> to {@link com.liferay.portal.kernel.dao.orm.QueryUtil#ALL_POS} will return the full result set.
+	* </p>
+	*
+	* @param start the lower bound of the range of members to return
+	* @param end the upper bound of the range of members to return (not inclusive)
+	* @param orderByComparator the comparator to order the results by
+	* @return the ordered range of members
+	* @throws SystemException if a system exception occurred
+	*/
+	public static java.util.List<z.prueba.model.Member> findAll(int start,
+		int end,
+		com.liferay.portal.kernel.util.OrderByComparator orderByComparator)
+		throws com.liferay.portal.kernel.exception.SystemException {
+		return getPersistence().findAll(start, end, orderByComparator);
+	}
+
+	/**
+	* Removes all the members where groupId = &#63; and memberLastName = &#63; from the database.
+	*
+	* @param groupId the group id to search with
+	* @param memberLastName the member last name to search with
+	* @throws SystemException if a system exception occurred
+	*/
+	public static void removeByG_PN(long groupId,
+		java.lang.String memberLastName)
+		throws com.liferay.portal.kernel.exception.SystemException {
+		getPersistence().removeByG_PN(groupId, memberLastName);
+	}
+
+	/**
+	* Removes all the members where groupId = &#63; from the database.
+	*
+	* @param groupId the group id to search with
+	* @throws SystemException if a system exception occurred
+	*/
+	public static void removeByGroupId(long groupId)
+		throws com.liferay.portal.kernel.exception.SystemException {
+		getPersistence().removeByGroupId(groupId);
+	}
+
+	/**
+	* Removes all the members where companyId = &#63; from the database.
+	*
+	* @param companyId the company id to search with
+	* @throws SystemException if a system exception occurred
+	*/
+	public static void removeByCompanyId(long companyId)
+		throws com.liferay.portal.kernel.exception.SystemException {
+		getPersistence().removeByCompanyId(companyId);
+	}
+
+	/**
+	* Removes all the members from the database.
+	*
+	* @throws SystemException if a system exception occurred
+	*/
+	public static void removeAll()
+		throws com.liferay.portal.kernel.exception.SystemException {
+		getPersistence().removeAll();
+	}
+
+	/**
+	* Counts all the members where groupId = &#63; and memberLastName = &#63;.
+	*
+	* @param groupId the group id to search with
+	* @param memberLastName the member last name to search with
+	* @return the number of matching members
+	* @throws SystemException if a system exception occurred
+	*/
+	public static int countByG_PN(long groupId, java.lang.String memberLastName)
+		throws com.liferay.portal.kernel.exception.SystemException {
+		return getPersistence().countByG_PN(groupId, memberLastName);
+	}
+
+	/**
+	* Counts all the members where groupId = &#63;.
+	*
+	* @param groupId the group id to search with
+	* @return the number of matching members
+	* @throws SystemException if a system exception occurred
+	*/
+	public static int countByGroupId(long groupId)
+		throws com.liferay.portal.kernel.exception.SystemException {
+		return getPersistence().countByGroupId(groupId);
+	}
+
+	/**
+	* Counts all the members where companyId = &#63;.
+	*
+	* @param companyId the company id to search with
+	* @return the number of matching members
+	* @throws SystemException if a system exception occurred
+	*/
+	public static int countByCompanyId(long companyId)
+		throws com.liferay.portal.kernel.exception.SystemException {
+		return getPersistence().countByCompanyId(companyId);
+	}
+
+	/**
+	* Counts all the members.
+	*
+	* @return the number of members
+	* @throws SystemException if a system exception occurred
+	*/
+	public static int countAll()
+		throws com.liferay.portal.kernel.exception.SystemException {
+		return getPersistence().countAll();
+	}
+
+	public static MemberPersistence getPersistence() {
+		if (_persistence == null) {
+			_persistence = (MemberPersistence)PortletBeanLocatorUtil.locate(z.prueba.service.ClpSerializer.SERVLET_CONTEXT_NAME,
+					MemberPersistence.class.getName());
+		}
+
+		return _persistence;
+	}
+
+	public void setPersistence(MemberPersistence persistence) {
+		_persistence = persistence;
+	}
+
+	private static MemberPersistence _persistence;
+}

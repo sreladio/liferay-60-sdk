@@ -1,0 +1,282 @@
+/**
+ * Copyright (c) 2000-2011 Liferay, Inc. All rights reserved.
+ *
+ * This library is free software; you can redistribute it and/or modify it under
+ * the terms of the GNU Lesser General Public License as published by the Free
+ * Software Foundation; either version 2.1 of the License, or (at your option)
+ * any later version.
+ *
+ * This library is distributed in the hope that it will be useful, but WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more
+ * details.
+ */
+
+package com.z.registration.service.persistence;
+
+import com.liferay.portal.kernel.bean.PortletBeanLocatorUtil;
+import com.liferay.portal.kernel.dao.orm.DynamicQuery;
+import com.liferay.portal.kernel.exception.SystemException;
+import com.liferay.portal.kernel.util.OrderByComparator;
+import com.liferay.portal.service.ServiceContext;
+
+import com.z.registration.model.PohoneNumber;
+
+import java.util.List;
+
+/**
+ * The persistence utility for the pohone number service. This utility wraps {@link PohoneNumberPersistenceImpl} and provides direct access to the database for CRUD operations. This utility should only be used by the service layer, as it must operate within a transaction. Never access this utility in a JSP, controller, model, or other front-end class.
+ *
+ * <p>
+ * Never modify this class directly. Modify <code>service.xml</code> and rerun ServiceBuilder to regenerate this class.
+ * </p>
+ *
+ * <p>
+ * Caching information and settings can be found in <code>portal.properties</code>
+ * </p>
+ *
+ * @author Sr. Eladio
+ * @see PohoneNumberPersistence
+ * @see PohoneNumberPersistenceImpl
+ * @generated
+ */
+public class PohoneNumberUtil {
+	/**
+	 * @see com.liferay.portal.service.persistence.BasePersistence#clearCache()
+	 */
+	public static void clearCache() {
+		getPersistence().clearCache();
+	}
+
+	/**
+	 * @see com.liferay.portal.service.persistence.BasePersistence#clearCache(com.liferay.portal.model.BaseModel)
+	 */
+	public static void clearCache(PohoneNumber pohoneNumber) {
+		getPersistence().clearCache(pohoneNumber);
+	}
+
+	/**
+	 * @see com.liferay.portal.service.persistence.BasePersistence#countWithDynamicQuery(DynamicQuery)
+	 */
+	public long countWithDynamicQuery(DynamicQuery dynamicQuery)
+		throws SystemException {
+		return getPersistence().countWithDynamicQuery(dynamicQuery);
+	}
+
+	/**
+	 * @see com.liferay.portal.service.persistence.BasePersistence#findWithDynamicQuery(DynamicQuery)
+	 */
+	public static List<PohoneNumber> findWithDynamicQuery(
+		DynamicQuery dynamicQuery) throws SystemException {
+		return getPersistence().findWithDynamicQuery(dynamicQuery);
+	}
+
+	/**
+	 * @see com.liferay.portal.service.persistence.BasePersistence#findWithDynamicQuery(DynamicQuery, int, int)
+	 */
+	public static List<PohoneNumber> findWithDynamicQuery(
+		DynamicQuery dynamicQuery, int start, int end)
+		throws SystemException {
+		return getPersistence().findWithDynamicQuery(dynamicQuery, start, end);
+	}
+
+	/**
+	 * @see com.liferay.portal.service.persistence.BasePersistence#findWithDynamicQuery(DynamicQuery, int, int, OrderByComparator)
+	 */
+	public static List<PohoneNumber> findWithDynamicQuery(
+		DynamicQuery dynamicQuery, int start, int end,
+		OrderByComparator orderByComparator) throws SystemException {
+		return getPersistence()
+				   .findWithDynamicQuery(dynamicQuery, start, end,
+			orderByComparator);
+	}
+
+	/**
+	 * @see com.liferay.portal.service.persistence.BasePersistence#remove(com.liferay.portal.model.BaseModel)
+	 */
+	public static PohoneNumber remove(PohoneNumber pohoneNumber)
+		throws SystemException {
+		return getPersistence().remove(pohoneNumber);
+	}
+
+	/**
+	 * @see com.liferay.portal.service.persistence.BasePersistence#update(com.liferay.portal.model.BaseModel, boolean)
+	 */
+	public static PohoneNumber update(PohoneNumber pohoneNumber, boolean merge)
+		throws SystemException {
+		return getPersistence().update(pohoneNumber, merge);
+	}
+
+	/**
+	 * @see com.liferay.portal.service.persistence.BasePersistence#update(com.liferay.portal.model.BaseModel, boolean, ServiceContext)
+	 */
+	public static PohoneNumber update(PohoneNumber pohoneNumber, boolean merge,
+		ServiceContext serviceContext) throws SystemException {
+		return getPersistence().update(pohoneNumber, merge, serviceContext);
+	}
+
+	/**
+	* Caches the pohone number in the entity cache if it is enabled.
+	*
+	* @param pohoneNumber the pohone number to cache
+	*/
+	public static void cacheResult(
+		com.z.registration.model.PohoneNumber pohoneNumber) {
+		getPersistence().cacheResult(pohoneNumber);
+	}
+
+	/**
+	* Caches the pohone numbers in the entity cache if it is enabled.
+	*
+	* @param pohoneNumbers the pohone numbers to cache
+	*/
+	public static void cacheResult(
+		java.util.List<com.z.registration.model.PohoneNumber> pohoneNumbers) {
+		getPersistence().cacheResult(pohoneNumbers);
+	}
+
+	/**
+	* Creates a new pohone number with the primary key. Does not add the pohone number to the database.
+	*
+	* @param foreingMemberId the primary key for the new pohone number
+	* @return the new pohone number
+	*/
+	public static com.z.registration.model.PohoneNumber create(
+		long foreingMemberId) {
+		return getPersistence().create(foreingMemberId);
+	}
+
+	/**
+	* Removes the pohone number with the primary key from the database. Also notifies the appropriate model listeners.
+	*
+	* @param foreingMemberId the primary key of the pohone number to remove
+	* @return the pohone number that was removed
+	* @throws com.z.registration.NoSuchPohoneNumberException if a pohone number with the primary key could not be found
+	* @throws SystemException if a system exception occurred
+	*/
+	public static com.z.registration.model.PohoneNumber remove(
+		long foreingMemberId)
+		throws com.liferay.portal.kernel.exception.SystemException,
+			com.z.registration.NoSuchPohoneNumberException {
+		return getPersistence().remove(foreingMemberId);
+	}
+
+	public static com.z.registration.model.PohoneNumber updateImpl(
+		com.z.registration.model.PohoneNumber pohoneNumber, boolean merge)
+		throws com.liferay.portal.kernel.exception.SystemException {
+		return getPersistence().updateImpl(pohoneNumber, merge);
+	}
+
+	/**
+	* Finds the pohone number with the primary key or throws a {@link com.z.registration.NoSuchPohoneNumberException} if it could not be found.
+	*
+	* @param foreingMemberId the primary key of the pohone number to find
+	* @return the pohone number
+	* @throws com.z.registration.NoSuchPohoneNumberException if a pohone number with the primary key could not be found
+	* @throws SystemException if a system exception occurred
+	*/
+	public static com.z.registration.model.PohoneNumber findByPrimaryKey(
+		long foreingMemberId)
+		throws com.liferay.portal.kernel.exception.SystemException,
+			com.z.registration.NoSuchPohoneNumberException {
+		return getPersistence().findByPrimaryKey(foreingMemberId);
+	}
+
+	/**
+	* Finds the pohone number with the primary key or returns <code>null</code> if it could not be found.
+	*
+	* @param foreingMemberId the primary key of the pohone number to find
+	* @return the pohone number, or <code>null</code> if a pohone number with the primary key could not be found
+	* @throws SystemException if a system exception occurred
+	*/
+	public static com.z.registration.model.PohoneNumber fetchByPrimaryKey(
+		long foreingMemberId)
+		throws com.liferay.portal.kernel.exception.SystemException {
+		return getPersistence().fetchByPrimaryKey(foreingMemberId);
+	}
+
+	/**
+	* Finds all the pohone numbers.
+	*
+	* @return the pohone numbers
+	* @throws SystemException if a system exception occurred
+	*/
+	public static java.util.List<com.z.registration.model.PohoneNumber> findAll()
+		throws com.liferay.portal.kernel.exception.SystemException {
+		return getPersistence().findAll();
+	}
+
+	/**
+	* Finds a range of all the pohone numbers.
+	*
+	* <p>
+	* Useful when paginating results. Returns a maximum of <code>end - start</code> instances. <code>start</code> and <code>end</code> are not primary keys, they are indexes in the result set. Thus, <code>0</code> refers to the first result in the set. Setting both <code>start</code> and <code>end</code> to {@link com.liferay.portal.kernel.dao.orm.QueryUtil#ALL_POS} will return the full result set.
+	* </p>
+	*
+	* @param start the lower bound of the range of pohone numbers to return
+	* @param end the upper bound of the range of pohone numbers to return (not inclusive)
+	* @return the range of pohone numbers
+	* @throws SystemException if a system exception occurred
+	*/
+	public static java.util.List<com.z.registration.model.PohoneNumber> findAll(
+		int start, int end)
+		throws com.liferay.portal.kernel.exception.SystemException {
+		return getPersistence().findAll(start, end);
+	}
+
+	/**
+	* Finds an ordered range of all the pohone numbers.
+	*
+	* <p>
+	* Useful when paginating results. Returns a maximum of <code>end - start</code> instances. <code>start</code> and <code>end</code> are not primary keys, they are indexes in the result set. Thus, <code>0</code> refers to the first result in the set. Setting both <code>start</code> and <code>end</code> to {@link com.liferay.portal.kernel.dao.orm.QueryUtil#ALL_POS} will return the full result set.
+	* </p>
+	*
+	* @param start the lower bound of the range of pohone numbers to return
+	* @param end the upper bound of the range of pohone numbers to return (not inclusive)
+	* @param orderByComparator the comparator to order the results by
+	* @return the ordered range of pohone numbers
+	* @throws SystemException if a system exception occurred
+	*/
+	public static java.util.List<com.z.registration.model.PohoneNumber> findAll(
+		int start, int end,
+		com.liferay.portal.kernel.util.OrderByComparator orderByComparator)
+		throws com.liferay.portal.kernel.exception.SystemException {
+		return getPersistence().findAll(start, end, orderByComparator);
+	}
+
+	/**
+	* Removes all the pohone numbers from the database.
+	*
+	* @throws SystemException if a system exception occurred
+	*/
+	public static void removeAll()
+		throws com.liferay.portal.kernel.exception.SystemException {
+		getPersistence().removeAll();
+	}
+
+	/**
+	* Counts all the pohone numbers.
+	*
+	* @return the number of pohone numbers
+	* @throws SystemException if a system exception occurred
+	*/
+	public static int countAll()
+		throws com.liferay.portal.kernel.exception.SystemException {
+		return getPersistence().countAll();
+	}
+
+	public static PohoneNumberPersistence getPersistence() {
+		if (_persistence == null) {
+			_persistence = (PohoneNumberPersistence)PortletBeanLocatorUtil.locate(com.z.registration.service.ClpSerializer.SERVLET_CONTEXT_NAME,
+					PohoneNumberPersistence.class.getName());
+		}
+
+		return _persistence;
+	}
+
+	public void setPersistence(PohoneNumberPersistence persistence) {
+		_persistence = persistence;
+	}
+
+	private static PohoneNumberPersistence _persistence;
+}

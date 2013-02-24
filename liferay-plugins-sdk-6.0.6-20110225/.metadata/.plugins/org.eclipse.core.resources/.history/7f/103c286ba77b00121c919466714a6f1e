@@ -1,0 +1,3 @@
+create index IX_6CF1ACC3 on Z_Member (companyId);
+create index IX_31748805 on Z_Member (groupId);
+create index IX_968C47B4 on Z_Member (groupId, memberLastName);

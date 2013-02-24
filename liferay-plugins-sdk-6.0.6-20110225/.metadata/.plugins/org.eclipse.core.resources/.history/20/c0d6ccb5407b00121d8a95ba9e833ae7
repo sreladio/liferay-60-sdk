@@ -1,0 +1,59 @@
+package com.oldschool.user.registration.portlet;
+
+import java.util.ArrayList;
+
+import javax.portlet.ActionRequest;
+import javax.portlet.ActionResponse;
+
+import com.liferay.portal.kernel.servlet.SessionErrors;
+import com.liferay.portal.kernel.servlet.SessionMessages;
+import com.liferay.portal.kernel.util.ParamUtil;
+import com.liferay.portal.kernel.util.Validator;
+import com.liferay.util.bridges.mvc.MVCPortlet;
+import com.oldschool.user.registration.model.USMember;
+import com.oldschool.user.registration.service.USMemberLocalServiceUtil;
+
+public class AdminRegistrationPortlet extends MVCPortlet {
+	
+	protected String editMemberJSP = "/admin/edit_member.jsp";
+
+	public void editMember(ActionRequest request,	ActionResponse response)
+			throws Exception {
+		
+		long memberKey = ParamUtil.getLong(request, "resourcePrimKey");
+		if (Validator.isNotNull(memberKey)) {
+			USMember member = USMemberLocalServiceUtil.getUSMember(memberKey);
+			request.setAttribute("member", member);
+			response.setRenderParameter("jspPage", editMemberJSP);
+		}
+	}
+
+	public void updateProduct(ActionRequest request, ActionResponse response)
+			throws Exception {
+		
+		long memberKey = ParamUtil.getLong(request, "resourcePrimKey");
+		ArrayList<String> errors = new ArrayList();
+		if (Validator.isNotNull(memberKey)) {
+			USMember member = USMemberLocalServiceUtil.getUSMember(memberKey);
+			USMember requestMember =ActionUtil.memberFromRequest(request);
+			if (registerFormValidator.validateRegister(requestMember, errors)) {
+				member.setMemberFirstName(requestMember.getMemberFirstName());
+				member.setMemberLastName(requestMember.getMemberLastName());
+				member.setMemberPhoneNumber(requestMember.getMemberPhoneNumber());
+				member.setMemberEmail(requestMember.getMemberEmail());
+				member.setMemberBirthDate(requestMember.getMemberBirthDate());
+				
+				USMemberLocalServiceUtil.updateUSMember(member);
+				SessionMessages.add(request, "productUpdated");
+			}
+			else {
+				for (String error : errors) {
+					SessionErrors.add(request, error);
+				}
+			}
+		}
+		else {
+			SessionErrors.add(request, "error-updating");
+		}
+	}
+}

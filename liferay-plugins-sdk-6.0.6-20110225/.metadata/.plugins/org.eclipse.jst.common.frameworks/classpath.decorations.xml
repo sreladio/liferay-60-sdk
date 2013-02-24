@@ -1,0 +1,17 @@
+<classpath>
+  <container id="z-portlet!org.eclipse.jst.j2ee.internal.web.container">
+    <entry id="/opt/lf60SDK/liferay-plugins-sdk-6.0.6-20110225/portlets/z-portlet/docroot/WEB-INF/lib/z-portlet-service.jar">
+      <source-attachment-path>/z-portlet/docroot/WEB-INF/service</source-attachment-path>
+    </entry>
+  </container>
+  <container id="user-registration-portlet!org.eclipse.jst.j2ee.internal.web.container">
+    <entry id="/opt/lf60SDK/liferay-plugins-sdk-6.0.6-20110225/portlets/user-registration-portlet/docroot/WEB-INF/lib/user-registration-portlet-service.jar">
+      <source-attachment-path>/user-registration-portlet/docroot/WEB-INF/service</source-attachment-path>
+    </entry>
+  </container>
+  <container id="product-registration-portlet!org.eclipse.jst.j2ee.internal.web.container">
+    <entry id="/opt/lf60SDK/liferay-plugins-sdk-6.0.6-20110225/portlets/product-registration-portlet/docroot/WEB-INF/lib/product-registration-portlet-service.jar">
+      <source-attachment-path>/product-registration-portlet/docroot/WEB-INF/service</source-attachment-path>
+    </entry>
+  </container>
+</classpath>

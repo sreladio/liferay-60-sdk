@@ -1,0 +1,252 @@
+/**
+ * Copyright (c) 2000-2011 Liferay, Inc. All rights reserved.
+ *
+ * This library is free software; you can redistribute it and/or modify it under
+ * the terms of the GNU Lesser General Public License as published by the Free
+ * Software Foundation; either version 2.1 of the License, or (at your option)
+ * any later version.
+ *
+ * This library is distributed in the hope that it will be useful, but WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more
+ * details.
+ */
+
+package com.oldschool.user.registration.model;
+
+import com.liferay.portal.kernel.bean.AutoEscapeBeanHandler;
+import com.liferay.portal.kernel.util.StringBundler;
+import com.liferay.portal.model.impl.BaseModelImpl;
+
+import java.io.Serializable;
+
+import java.lang.reflect.Proxy;
+
+import java.util.Date;
+
+/**
+ * @author Sr. Eladio
+ */
+public class USMemberClp extends BaseModelImpl<USMember> implements USMember {
+	public USMemberClp() {
+	}
+
+	public long getPrimaryKey() {
+		return _memberId;
+	}
+
+	public void setPrimaryKey(long pk) {
+		setMemberId(pk);
+	}
+
+	public Serializable getPrimaryKeyObj() {
+		return new Long(_memberId);
+	}
+
+	public long getMemberId() {
+		return _memberId;
+	}
+
+	public void setMemberId(long memberId) {
+		_memberId = memberId;
+	}
+
+	public String getMemberFirstName() {
+		return _memberFirstName;
+	}
+
+	public void setMemberFirstName(String memberFirstName) {
+		_memberFirstName = memberFirstName;
+	}
+
+	public String getMemberLastName() {
+		return _memberLastName;
+	}
+
+	public void setMemberLastName(String memberLastName) {
+		_memberLastName = memberLastName;
+	}
+
+	public String getMemberPhoneNumber() {
+		return _memberPhoneNumber;
+	}
+
+	public void setMemberPhoneNumber(String memberPhoneNumber) {
+		_memberPhoneNumber = memberPhoneNumber;
+	}
+
+	public String getMemberEmail() {
+		return _memberEmail;
+	}
+
+	public void setMemberEmail(String memberEmail) {
+		_memberEmail = memberEmail;
+	}
+
+	public Date getMemberBirthDate() {
+		return _memberBirthDate;
+	}
+
+	public void setMemberBirthDate(Date memberBirthDate) {
+		_memberBirthDate = memberBirthDate;
+	}
+
+	public long getCompanyId() {
+		return _companyId;
+	}
+
+	public void setCompanyId(long companyId) {
+		_companyId = companyId;
+	}
+
+	public long getGroupId() {
+		return _groupId;
+	}
+
+	public void setGroupId(long groupId) {
+		_groupId = groupId;
+	}
+
+	public USMember toEscapedModel() {
+		if (isEscapedModel()) {
+			return this;
+		}
+		else {
+			return (USMember)Proxy.newProxyInstance(USMember.class.getClassLoader(),
+				new Class[] { USMember.class }, new AutoEscapeBeanHandler(this));
+		}
+	}
+
+	public Object clone() {
+		USMemberClp clone = new USMemberClp();
+
+		clone.setMemberId(getMemberId());
+		clone.setMemberFirstName(getMemberFirstName());
+		clone.setMemberLastName(getMemberLastName());
+		clone.setMemberPhoneNumber(getMemberPhoneNumber());
+		clone.setMemberEmail(getMemberEmail());
+		clone.setMemberBirthDate(getMemberBirthDate());
+		clone.setCompanyId(getCompanyId());
+		clone.setGroupId(getGroupId());
+
+		return clone;
+	}
+
+	public int compareTo(USMember usMember) {
+		int value = 0;
+
+		value = getMemberLastName().compareTo(usMember.getMemberLastName());
+
+		if (value != 0) {
+			return value;
+		}
+
+		return 0;
+	}
+
+	public boolean equals(Object obj) {
+		if (obj == null) {
+			return false;
+		}
+
+		USMemberClp usMember = null;
+
+		try {
+			usMember = (USMemberClp)obj;
+		}
+		catch (ClassCastException cce) {
+			return false;
+		}
+
+		long pk = usMember.getPrimaryKey();
+
+		if (getPrimaryKey() == pk) {
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
+
+	public int hashCode() {
+		return (int)getPrimaryKey();
+	}
+
+	public String toString() {
+		StringBundler sb = new StringBundler(17);
+
+		sb.append("{memberId=");
+		sb.append(getMemberId());
+		sb.append(", memberFirstName=");
+		sb.append(getMemberFirstName());
+		sb.append(", memberLastName=");
+		sb.append(getMemberLastName());
+		sb.append(", memberPhoneNumber=");
+		sb.append(getMemberPhoneNumber());
+		sb.append(", memberEmail=");
+		sb.append(getMemberEmail());
+		sb.append(", memberBirthDate=");
+		sb.append(getMemberBirthDate());
+		sb.append(", companyId=");
+		sb.append(getCompanyId());
+		sb.append(", groupId=");
+		sb.append(getGroupId());
+		sb.append("}");
+
+		return sb.toString();
+	}
+
+	public String toXmlString() {
+		StringBundler sb = new StringBundler(28);
+
+		sb.append("<model><model-name>");
+		sb.append("com.oldschool.user.registration.model.USMember");
+		sb.append("</model-name>");
+
+		sb.append(
+			"<column><column-name>memberId</column-name><column-value><![CDATA[");
+		sb.append(getMemberId());
+		sb.append("]]></column-value></column>");
+		sb.append(
+			"<column><column-name>memberFirstName</column-name><column-value><![CDATA[");
+		sb.append(getMemberFirstName());
+		sb.append("]]></column-value></column>");
+		sb.append(
+			"<column><column-name>memberLastName</column-name><column-value><![CDATA[");
+		sb.append(getMemberLastName());
+		sb.append("]]></column-value></column>");
+		sb.append(
+			"<column><column-name>memberPhoneNumber</column-name><column-value><![CDATA[");
+		sb.append(getMemberPhoneNumber());
+		sb.append("]]></column-value></column>");
+		sb.append(
+			"<column><column-name>memberEmail</column-name><column-value><![CDATA[");
+		sb.append(getMemberEmail());
+		sb.append("]]></column-value></column>");
+		sb.append(
+			"<column><column-name>memberBirthDate</column-name><column-value><![CDATA[");
+		sb.append(getMemberBirthDate());
+		sb.append("]]></column-value></column>");
+		sb.append(
+			"<column><column-name>companyId</column-name><column-value><![CDATA[");
+		sb.append(getCompanyId());
+		sb.append("]]></column-value></column>");
+		sb.append(
+			"<column><column-name>groupId</column-name><column-value><![CDATA[");
+		sb.append(getGroupId());
+		sb.append("]]></column-value></column>");
+
+		sb.append("</model>");
+
+		return sb.toString();
+	}
+
+	private long _memberId;
+	private String _memberFirstName;
+	private String _memberLastName;
+	private String _memberPhoneNumber;
+	private String _memberEmail;
+	private Date _memberBirthDate;
+	private long _companyId;
+	private long _groupId;
+}

@@ -1,0 +1,16 @@
+# Form Fields
+user-first-name=Nombre
+user-last-name=Apellidos
+user-email=eMail
+user-phone-number=Número de teléfono
+member-birth-date=Fecha de nacimiento
+
+# Form success messages
+member-add-successfully=La operación de alta se producido con el éxito esperado
+
+# Form errorMessages 
+first-name-required=El nombre es obligatorio
+last-name-required=Los apellidos son obligatorios
+eMail-required=El email es obligatorio
+phone-number-must-contain-nine-digits=El número de teléfono debe de contener nueve dígitos
+eMail-must-be-valid=Debe de introducir un email válido

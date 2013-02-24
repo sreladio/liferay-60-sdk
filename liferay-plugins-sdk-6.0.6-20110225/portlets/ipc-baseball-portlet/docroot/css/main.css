@@ -1,0 +1,12 @@
+p {
+	color:black;
+	font-family:Verdana;
+}
+
+p::selection {
+	background: #FF0000;
+}
+
+p::-moz-selection {
+	background: #FF0000;
+}

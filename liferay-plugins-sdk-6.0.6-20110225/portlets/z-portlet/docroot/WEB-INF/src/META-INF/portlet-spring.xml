@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" default-destroy-method="destroy" default-init-method="afterPropertiesSet" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="com.z.registration.service.MemberLocalService" class="com.z.registration.service.impl.MemberLocalServiceImpl" />
+	<bean id="com.z.registration.service.MemberLocalServiceUtil" class="com.z.registration.service.MemberLocalServiceUtil">
+		<property name="service" ref="com.z.registration.service.MemberLocalService" />
+	</bean>
+	<bean id="com.z.registration.service.persistence.MemberPersistence" class="com.z.registration.service.persistence.MemberPersistenceImpl" parent="basePersistence" />
+	<bean id="com.z.registration.service.PohoneNumberLocalService" class="com.z.registration.service.impl.PohoneNumberLocalServiceImpl" />
+	<bean id="com.z.registration.service.PohoneNumberLocalServiceUtil" class="com.z.registration.service.PohoneNumberLocalServiceUtil">
+		<property name="service" ref="com.z.registration.service.PohoneNumberLocalService" />
+	</bean>
+	<bean id="com.z.registration.service.persistence.PohoneNumberPersistence" class="com.z.registration.service.persistence.PohoneNumberPersistenceImpl" parent="basePersistence" />
+	<bean id="prueba.service.MemberLocalService" class="prueba.service.impl.MemberLocalServiceImpl" />
+	<bean id="prueba.service.MemberLocalServiceUtil" class="prueba.service.MemberLocalServiceUtil">
+		<property name="service" ref="prueba.service.MemberLocalService" />
+	</bean>
+	<bean id="prueba.service.persistence.MemberPersistence" class="prueba.service.persistence.MemberPersistenceImpl" parent="basePersistence" />
+	<bean id="prueba.service.PhoneNumberLocalService" class="prueba.service.impl.PhoneNumberLocalServiceImpl" />
+	<bean id="prueba.service.PhoneNumberLocalServiceUtil" class="prueba.service.PhoneNumberLocalServiceUtil">
+		<property name="service" ref="prueba.service.PhoneNumberLocalService" />
+	</bean>
+	<bean id="prueba.service.persistence.PhoneNumberPersistence" class="prueba.service.persistence.PhoneNumberPersistenceImpl" parent="basePersistence" />
+</beans>

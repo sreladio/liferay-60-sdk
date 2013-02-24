@@ -1,0 +1,53 @@
+<%@include file="/../init.jsp" %>
+
+<%
+	USMember member = (USMember) request.getAttribute("member");
+%>
+
+<portlet:renderURL var="cancelURL">
+	<portlet:param name="jspPage" value="/admin/view.jsp" />
+</portlet:renderURL>
+
+<portlet:actionURL name="updateMember" var="updateMemberURL" />
+<h2>Edit a member</h2>
+<aui:form name="fm" action="<%= updateMemberURL.toString() %>" method="post">
+	<aui:fieldset>
+		<aui:input
+			name="resourcePrimKey"
+			value="<%= member.getMemberId() %>" type="hidden"
+		/>
+		
+		<aui:input
+			name="memberFirstName"
+			value="<%= member.getMemberFirstName() %>" size="45"
+		/>
+		
+		<aui:input
+			name="memberLastName"
+			value="<%= member.getMemberLastName() %>" size="45"
+		/>
+		
+		<aui:input
+			name="memberPhoneNumber"
+			value="<%= member.getMemberPhoneNumber() %>" size="45"
+		/>
+		
+		<aui:input
+			name="memberEmail"
+			value="<%= member.getMemberEmail() %>" size="45"
+		/>
+		
+		<aui:input
+			name="memberBirthDate"
+			value="<%= member.getMemberBirthDate() %>" size="45"
+		/>
+		
+		<aui:button-row>
+			<aui:button type="submit"/>
+			<aui:button type="cancel" value="Cancel" onClick="<%= cancelURL.toString() %>"
+		/>
+		
+		</aui:button-row>
+	</aui:fieldset>
+</aui:form>
+

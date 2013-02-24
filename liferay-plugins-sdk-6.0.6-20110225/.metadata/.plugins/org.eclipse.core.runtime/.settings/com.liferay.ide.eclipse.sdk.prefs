@@ -1,0 +1,2 @@
+eclipse.preferences.version=1
+sdks=<?xml version\="1.0" encoding\="UTF-8"?>\n<sdks default\="liferay-plugins-sdk-6.0.6-20110225">\n<sdk location\="/opt/lf60SDK/liferay-plugins-sdk-6.0.6-20110225" name\="liferay-plugins-sdk-6.0.6-20110225" version\="6.0.6"/>\n</sdks>

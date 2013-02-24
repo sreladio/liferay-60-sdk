@@ -1,0 +1,7 @@
+Buildfile: /opt/lf60SDK/liferay-plugins-sdk-6.0.6-20110225/themes/eladio-theme/build.xml
+compile:
+     [copy] Copying 676 files to /opt/lf60SDK/liferay-plugins-sdk-6.0.6-20110225/themes/eladio-theme/docroot
+     [copy] Copying 5 files to /opt/lf60SDK/liferay-plugins-sdk-6.0.6-20110225/themes/eladio-theme/docroot/templates
+     [copy] Copying 52 files to /opt/lf60SDK/liferay-plugins-sdk-6.0.6-20110225/themes/eladio-theme/docroot
+BUILD SUCCESSFUL
+Total time: 8 seconds

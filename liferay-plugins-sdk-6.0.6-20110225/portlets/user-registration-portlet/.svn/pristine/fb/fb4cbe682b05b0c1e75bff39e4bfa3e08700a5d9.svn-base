@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<model-hints>
+	<model name="com.oldschool.user.registration.model.USMember">
+		<field name="memberId" type="long" />
+		<field name="memberFirstName" type="String" />
+		<field name="memberLastName" type="String" />
+		<field name="memberEmail" type="String" />
+		<field name="memberBirthDate" type="Date" />
+		<field name="companyId" type="long" />
+		<field name="groupId" type="long" />
+	</model>
+	<model name="com.oldschool.user.registration.model.USPhoneNumber">
+		<field name="numberId" type="String" />
+		<field name="memberId" type="long" />
+	</model>
+</model-hints>

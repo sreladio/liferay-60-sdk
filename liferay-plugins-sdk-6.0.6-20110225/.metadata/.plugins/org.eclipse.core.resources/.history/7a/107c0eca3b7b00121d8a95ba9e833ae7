@@ -1,0 +1,5 @@
+package com.oldschool.user.registration.portlet;
+
+public class AdminRegistrationPortlet {
+
+}

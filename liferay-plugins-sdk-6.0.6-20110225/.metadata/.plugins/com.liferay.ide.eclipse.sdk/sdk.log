@@ -1,0 +1,19 @@
+Buildfile: /opt/lf60SDK/liferay-plugins-sdk-6.0.6-20110225/portlets/user-registration-portlet/build.xml
+build-service:
+     [java] Loading jar:file:/opt/lf60/liferay-portal-6.0.6/tomcat-6.0.29/webapps/ROOT/WEB-INF/lib/portal-impl.jar!/system.properties
+     [java] Loading jar:file:/opt/lf60/liferay-portal-6.0.6/tomcat-6.0.29/webapps/ROOT/WEB-INF/lib/portal-impl.jar!/portal.properties
+     [java] Loading file:/opt/lf60/liferay-portal-6.0.6/tomcat-6.0.29/webapps/ROOT/WEB-INF/classes/portal-ext.properties
+     [java] Loading jar:file:/opt/lf60/liferay-portal-6.0.6/tomcat-6.0.29/webapps/ROOT/WEB-INF/lib/portal-impl.jar!/com/liferay/portal/tools/dependencies/portal-tools.properties
+     [java] 21:58:15,539 INFO  [PortalImpl:278] Global lib directory /opt/lf60/liferay-portal-6.0.6/tomcat-6.0.29/lib/ext/
+     [java] 21:58:15,542 INFO  [PortalImpl:298] Portal lib directory /opt/lf60/liferay-portal-6.0.6/tomcat-6.0.29/webapps/ROOT/WEB-INF/lib/
+     [java] Building USMember
+    [mkdir] Created dir: /opt/lf60SDK/liferay-plugins-sdk-6.0.6-20110225/portlets/user-registration-portlet/docroot/WEB-INF/service-classes
+   [delete] Deleting: /opt/lf60SDK/liferay-plugins-sdk-6.0.6-20110225/portlets/user-registration-portlet/docroot/WEB-INF/lib/user-registration-portlet-service.jar
+compile-java:
+    [javac] Compiling 24 source files to /opt/lf60SDK/liferay-plugins-sdk-6.0.6-20110225/portlets/user-registration-portlet/docroot/WEB-INF/service-classes
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+      [zip] Building zip: /opt/lf60SDK/liferay-plugins-sdk-6.0.6-20110225/portlets/user-registration-portlet/docroot/WEB-INF/lib/user-registration-portlet-service.jar
+   [delete] Deleting directory /opt/lf60SDK/liferay-plugins-sdk-6.0.6-20110225/portlets/user-registration-portlet/docroot/WEB-INF/service-classes
+BUILD SUCCESSFUL
+Total time: 19 seconds
