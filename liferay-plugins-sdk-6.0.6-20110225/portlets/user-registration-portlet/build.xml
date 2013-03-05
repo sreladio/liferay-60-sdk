@@ -45,6 +45,13 @@
             	<formatter type="xml"/>
             	<test name="com.oldschool.user.registration.unittest.portlet.RegisterFormValidatorTest"/>
         	</junit>
+		
+			<junitreport todir="${basedir}/unitTest/reports">
+		    	<fileset dir="${basedir}">
+		    		<filename name="**/*TEST-*"/>
+		    	</fileset>
+		    </junitreport>
+		
 	</target>
     
 	<target name="clean-tests">
