@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite errors="0" failures="0" hostname="eladio-System-Product-Name" id="0" name="RegisterFormValidatorTest" package="com.oldschool.user.registration.unittest.portlet" tests="1" time="0.057" timestamp="2013-03-05T20:20:18">
+      <properties>
+          <property name="env.DESKTOP_SESSION" value="gnome-shell" />
+
+          <property name="file.encoding.pkg" value="sun.io" />
+
+          <property name="java.home" value="/usr/lib/jvm/java-6-openjdk-amd64/jre" />
+
+          <property name="test.src.dir" value="/opt/lf60SDK/liferay-plugins-sdk-6.0.6-20110225/portlets/user-registration-portlet/unitTest/src" />
+
+          <property name="plugin-package.page-url" value="http://www.liferay.com" />
+
+          <property name="env.DISPLAY" value=":0" />
+
+          <property name="app.server.type" value="tomcat" />
+
+          <property name="ant.file.user-registration-portlet" value="/opt/lf60SDK/liferay-plugins-sdk-6.0.6-20110225/portlets/user-registration-portlet/build.xml" />
+
+          <property name="env.XDG_SESSION_COOKIE" value="0b4406ff98192095ab3524f400000008-1362127129.231688-2075323051" />
+
+          <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-6-openjdk-amd64/jre/lib/endorsed" />
+
+          <property name="env.LOGNAME" value="eladio" />
+
+          <property name="env.UBUNTU_MENUPROXY" value="libappmenu.so" />
+
+          <property name="src.dir" value="/opt/lf60SDK/liferay-plugins-sdk-6.0.6-20110225/portlets/user-registration-portlet/docroot/WEB-INF/src" />
+
+          <property name="javac.fork" value="true" />
+
+          <property name="env.SESSION_MANAGER" value="local/eladio-System-Product-Name:@/tmp/.ICE-unix/2111,unix/eladio-System-Product-Name:/tmp/.ICE-unix/2111" />
+
+          <property name="sun.os.patch.level" value="unknown" />
+
+          <property name="java.vendor.url" value="http://java.sun.com/" />
+
+          <property name="env.XDG_SEAT_PATH" value="/org/freedesktop/DisplayManager/Seat0" />
+
+          <property name="env.MANDATORY_PATH" value="/usr/share/gconf/gnome-shell.mandatory.path" />
+
+          <property name="java.version" value="1.6.0_24" />
+
+          <property name="eclipse.pdebuild.home" value="/usr/lib/eclipse/dropins/sdk/plugins/org.eclipse.pde.build_3.7.0.dist/.//" />
+
+          <property name="plugin.file" value="../../dist/user-registration-portlet-6.0.6.1.war" />
+
+          <property name="javac.debug" value="on" />
+
+          <property name="java.vendor.url.bug" value="http://java.sun.com/cgi-bin/bugreport.cgi" />
+
+          <property name="ant.project.invoked-targets" value="test" />
+
+          <property name="env.XDG_DATA_DIRS" value="/usr/share/gnome-shell:/usr/share/gnome:/usr/local/share/:/usr/share/" />
+
+          <property name="test.lib.dir" value="/opt/lf60SDK/liferay-plugins-sdk-6.0.6-20110225/portlets/user-registration-portlet/unitTest/lib" />
+
+          <property name="env.GNOME_KEYRING_CONTROL" value="/tmp/keyring-pWXjop" />
+
+          <property name="user.name" value="eladio" />
+
+          <property name="env.LANG" value="es_ES.UTF-8" />
+
+          <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+
+          <property name="sun.jnu.encoding" value="UTF-8" />
+
+          <property name="env.DBUS_SESSION_BUS_ADDRESS" value="unix:abstract=/tmp/dbus-bMbDZ9abyF,guid=94ce9b8f2a433ef7afa3944700000064" />
+
+          <property name="java.runtime.name" value="OpenJDK Runtime Environment" />
+
+          <property name="app.server.portal.dir" value="/opt/lf60/liferay-portal-6.0.6/tomcat-6.0.29/webapps/ROOT" />
+
+          <property name="plugins.excludes" value="" />
+
+          <property name="plugin-package.module-group-id" value="liferay" />
+
+          <property name="lib.dir" value="/opt/lf60SDK/liferay-plugins-sdk-6.0.6-20110225/portlets/user-registration-portlet/docroot/WEB-INF/lib" />
+
+          <property name="java.specification.name" value="Java Platform API Specification" />
+
+          <property name="user.timezone" value="" />
+
+          <property name="env.GIO_LAUNCHED_DESKTOP_FILE" value="/usr/share/applications/eclipse.desktop" />
+
+          <property name="path.separator" value=":" />
+
+          <property name="ant.file.build-common-portlet" value="/opt/lf60SDK/liferay-plugins-sdk-6.0.6-20110225/portlets/build-common-portlet.xml" />
+
+          <property name="plugin.tlds" value="${plugin-package.portal.dependency.tlds}" />
+
+          <property name="file.encoding" value="UTF-8" />
+
+          <property name="ant.project.default-target" value="deploy" />
+
+          <property name="env.HOME" value="/home/eladio" />
+
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.oldschool.user.registration.unittest.portlet.RegisterFormValidatorTest filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=true outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/opt/lf60SDK/liferay-plugins-sdk-6.0.6-20110225/portlets/user-registration-portlet/TEST-com.oldschool.user.registration.unittest.portlet.RegisterFormValidatorTest.xml crashfile=/opt/lf60SDK/liferay-plugins-sdk-6.0.6-20110225/portlets/user-registration-portlet/junitvmwatcher1823092013865788642.properties propsfile=/opt/lf60SDK/liferay-plugins-sdk-6.0.6-20110225/portlets/user-registration-portlet/junit4241667444989150976.properties" />
+
+          <property name="ant.file" value="/opt/lf60SDK/liferay-plugins-sdk-6.0.6-20110225/portlets/user-registration-portlet/build.xml" />
+
+          <property name="plugin-package.tags" value="" />
+
+          <property name="java.io.tmpdir" value="/tmp" />
+
+          <property name="env.GNOME_KEYRING_PID" value="2100" />
+
+          <property name="user.language" value="es" />
+
+          <property name="app.server.lib.portal.dir" value="/opt/lf60/liferay-portal-6.0.6/tomcat-6.0.29/webapps/ROOT/WEB-INF/lib" />
+
+          <property name="line.separator" value="&#xa;" />
+
+          <property name="app.server.deploy.dir" value="/opt/lf60/liferay-portal-6.0.6/tomcat-6.0.29/webapps" />
+
+          <property name="ecj.compiler" value="jar:file:/opt/lf60SDK/liferay-plugins-sdk-6.0.6-20110225/lib/ecj.jar!/org/eclipse/jdt/core/JDTCompilerAdapter.class" />
+
+          <property name="env.SSH_AGENT_PID" value="2151" />
+
+          <property name="javac.compiler" value="modern" />
+
+          <property name="java.vm.info" value="mixed mode" />
+
+          <property name="sun.desktop" value="gnome" />
+
+          <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+
+          <property name="test.classes.dir" value="/opt/lf60SDK/liferay-plugins-sdk-6.0.6-20110225/portlets/user-registration-portlet/unitTest/output" />
+
+          <property name="ant.file.build-common-plugin" value="/opt/lf60SDK/liferay-plugins-sdk-6.0.6-20110225/build-common-plugin.xml" />
+
+          <property name="env.GDMSESSION" value="gnome-shell" />
+
+          <property name="eclipse.pdebuild.templates" value="/usr/lib/eclipse/dropins/sdk/plugins/org.eclipse.pde.build_3.7.0.dist/templates//" />
+
+          <property name="lp.version" value="6.0.6" />
+
+          <property name="database.name" value="lportal" />
+
+          <property name="java.awt.printerjob" value="sun.print.PSPrinterJob" />
+
+          <property name="env.DEFAULTS_PATH" value="/usr/share/gconf/gnome-shell.default.path" />
+
+          <property name="ant.version" value="Apache Ant(TM) version 1.8.2 compiled on December 3 2011" />
+
+          <property name="env.XDG_SESSION_PATH" value="/org/freedesktop/DisplayManager/Session0" />
+
+          <property name="ant.file.type.build-common" value="file" />
+
+          <property name="os.name" value="Linux" />
+
+          <property name="java.specification.vendor" value="Sun Microsystems Inc." />
+
+          <property name="java.vm.name" value="OpenJDK 64-Bit Server VM" />
+
+          <property name="plugin.jars" value="${plugin-package.portal.dependency.jars}" />
+
+          <property name="os.apple" value="Mac OS X" />
+
+          <property name="plugin-package.author" value="Liferay, Inc." />
+
+          <property name="java.library.path" value="/usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64/server:/usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64:/usr/lib/jvm/java-6-openjdk-amd64/jre/../lib/amd64:/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib" />
+
+          <property name="correct.ant.version" value="true" />
+
+          <property name="plugin-package.name" value="User Registration" />
+
+          <property name="env.PATH" value="/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games" />
+
+          <property name="eclipse.pdebuild.scripts" value="/usr/lib/eclipse/dropins/sdk/plugins/org.eclipse.pde.build_3.7.0.dist/scripts//" />
+
+          <property name="ant.java.version" value="1.6" />
+
+          <property name="basedir" value="/opt/lf60SDK/liferay-plugins-sdk-6.0.6-20110225/portlets/user-registration-portlet" />
+
+          <property name="java.class.version" value="50.0" />
+
+          <property name="env.LD_LIBRARY_PATH" value="/usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64/server:/usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64:/usr/lib/jvm/java-6-openjdk-amd64/jre/../lib/amd64" />
+
+          <property name="database.types" value="db2,derby,firebird,hypersonic,informix,ingres,interbase,jdatastore,mysql,oracle,postgresql,sap,sqlserver,sybase" />
+
+          <property name="javac.nowarn" value="on" />
+
+          <property name="ant.home" value="/usr/lib/eclipse/plugins/org.apache.ant_1.8.2.v20120109-1030" />
+
+          <property name="env.GJS_DEBUG_OUTPUT" value="stderr" />
+
+          <property name="plugin-package.module-incremental-version" value="1" />
+
+          <property name="plugin-package.change-log" value="" />
+
+          <property name="sun.boot.library.path" value="/usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64" />
+
+          <property name="plugins.includes" value="*" />
+
+          <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+
+          <property name="env.LIBGL_DRIVERS_PATH" value="/usr/lib/fglrx/dri:/usr/lib32/fglrx/dri" />
+
+          <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment" />
+
+          <property name="env.USER" value="eladio" />
+
+          <property name="os.unix" value="Linux,FreeBSD,Solaris,SunOS" />
+
+          <property name="required.portal.jars" value="commons-logging.jar,log4j.jar,util-bridges.jar,util-java.jar,util-taglib.jar" />
+
+          <property name="ant.project.name" value="user-registration-portlet" />
+
+          <property name="java.vm.specification.version" value="1.0" />
+
+          <property name="auto.deploy.dir" value="/opt/lf60/liferay-portal-6.0.6/tomcat-6.0.29/../deploy" />
+
+          <property name="sun.cpu.isalist" value="" />
+
+          <property name="java.ext.dirs" value="/usr/lib/jvm/java-6-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext" />
+
+          <property name="env.GJS_DEBUG_TOPICS" value="JS ERROR;JS LOG" />
+
+          <property name="os.version" value="3.2.0-36-generic" />
+
+          <property name="user.home" value="/home/eladio" />
+
+          <property name="env.XDG_CURRENT_DESKTOP" value="GNOME" />
+
+          <property name="java.vm.vendor" value="Sun Microsystems Inc." />
+
+          <property name="plugin-package.licenses" value="LGPL" />
+
+          <property name="env.XAUTHORITY" value="/home/eladio/.Xauthority" />
+
+          <property name="user.dir" value="/opt/lf60SDK/liferay-plugins-sdk-6.0.6-20110225/portlets/user-registration-portlet/unitTest/output/com/oldschool/user/registration/unittest/portlet" />
+
+          <property name="env.PWD" value="/home/eladio" />
+
+          <property name="sun.cpu.endian" value="little" />
+
+          <property name="ant.file.type.build-common-plugin" value="file" />
+
+          <property name="project.dir" value="../.." />
+
+          <property name="ant.build.javac.target" value="1.5" />
+
+          <property name="java.vm.version" value="20.0-b12" />
+
+          <property name="java.class.path" value="/opt/lf60SDK/liferay-plugins-sdk-6.0.6-20110225/portlets/user-registration-portlet/docroot/WEB-INF/classes:/opt/lf60SDK/liferay-plugins-sdk-6.0.6-20110225/portlets/user-registration-portlet/docroot/WEB-INF/lib/commons-logging.jar:/opt/lf60SDK/liferay-plugins-sdk-6.0.6-20110225/portlets/user-registration-portlet/docroot/WEB-INF/lib/log4j.jar:/opt/lf60SDK/liferay-plugins-sdk-6.0.6-20110225/portlets/user-registration-portlet/docroot/WEB-INF/lib/portal-service-6.0.4.jar:/opt/lf60SDK/liferay-plugins-sdk-6.0.6-20110225/portlets/user-registration-portlet/docroot/WEB-INF/lib/user-registration-portlet-service.jar:/opt/lf60SDK/liferay-plugins-sdk-6.0.6-20110225/portlets/user-registration-portlet/docroot/WEB-INF/lib/util-bridges.jar:/opt/lf60SDK/liferay-plugins-sdk-6.0.6-20110225/portlets/user-registration-portlet/docroot/WEB-INF/lib/util-java.jar:/opt/lf60SDK/liferay-plugins-sdk-6.0.6-20110225/portlets/user-registration-portlet/docroot/WEB-INF/lib/util-taglib.jar:/opt/lf60SDK/liferay-plugins-sdk-6.0.6-20110225/portlets/user-registration-portlet/unitTest/output:/opt/lf60SDK/liferay-plugins-sdk-6.0.6-20110225/portlets/user-registration-portlet/unitTest/lib/hamcrest-core-1.3.jar:/opt/lf60SDK/liferay-plugins-sdk-6.0.6-20110225/portlets/user-registration-portlet/unitTest/lib/junit-4.11.jar:/usr/share/java/ant-launcher-1.8.2.jar:/usr/share/java/ant-1.8.2.jar:/usr/share/java/ant-junit-1.8.2.jar" />
+
+          <property name="ant.library.dir" value="/usr/lib/eclipse/plugins/org.apache.ant_1.8.2.v20120109-1030/lib" />
+
+          <property name="ant.file.type.user-registration-portlet" value="file" />
+
+          <property name="os.arch" value="amd64" />
+
+          <property name="plugin.name" value="user-registration-portlet" />
+
+          <property name="svn.enabled" value="false" />
+
+          <property name="javac.deprecation" value="off" />
+
+          <property name="os.windows" value="Windows 95,Windows 98,Windows NT,Windows 2000,Windows 2003,Windows XP,Windows Vista,Windows 7" />
+
+          <property name="ant.build.javac.source" value="1.5" />
+
+          <property name="env.GIO_LAUNCHED_DESKTOP_FILE_PID" value="12276" />
+
+          <property name="sun.java.launcher" value="SUN_STANDARD" />
+
+          <property name="classes.dir" value="/opt/lf60SDK/liferay-plugins-sdk-6.0.6-20110225/portlets/user-registration-portlet/docroot/WEB-INF/classes" />
+
+          <property name="ant.core.lib" value="/usr/share/java/ant-1.8.2.jar" />
+
+          <property name="app.server.dir" value="/opt/lf60/liferay-portal-6.0.6/tomcat-6.0.29" />
+
+          <property name="java.vm.specification.vendor" value="Sun Microsystems Inc." />
+
+          <property name="ant.file.build-common" value="/opt/lf60SDK/liferay-plugins-sdk-6.0.6-20110225/build-common.xml" />
+
+          <property name="file.separator" value="/" />
+
+          <property name="java.runtime.version" value="1.6.0_24-b24" />
+
+          <property name="env.SSH_AUTH_SOCK" value="/tmp/keyring-pWXjop/ssh" />
+
+          <property name="sun.boot.class.path" value="/usr/lib/jvm/java-6-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-6-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-6-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-6-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-6-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-6-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-6-openjdk-amd64/jre/lib/netx.jar:/usr/lib/jvm/java-6-openjdk-amd64/jre/lib/plugin.jar:/usr/lib/jvm/java-6-openjdk-amd64/jre/lib/rhino.jar:/usr/lib/jvm/java-6-openjdk-amd64/jre/lib/modules/jdk.boot.jar:/usr/lib/jvm/java-6-openjdk-amd64/jre/classes" />
+
+          <property name="plugin.version" value="1" />
+
+          <property name="app.server.classes.portal.dir" value="/opt/lf60/liferay-portal-6.0.6/tomcat-6.0.29/webapps/ROOT/WEB-INF/classes" />
+
+          <property name="plugin.name.beginindex" value="57" />
+
+          <property name="env.XDG_CONFIG_DIRS" value="/etc/xdg/xdg-gnome-shell:/etc/xdg" />
+
+          <property name="ant.file.type.build-common-portlet" value="file" />
+
+          <property name="user.country" value="ES" />
+
+          <property name="env.ANT_HOME" value="/usr/lib/eclipse/plugins/org.apache.ant_1.8.2.v20120109-1030" />
+
+          <property name="env.SHELL" value="/bin/bash" />
+
+          <property name="java.vendor" value="Sun Microsystems Inc." />
+
+          <property name="javac.memoryMaximumSize" value="256m" />
+
+          <property name="env.GPG_AGENT_INFO" value="/tmp/keyring-pWXjop/gpg:0:1" />
+
+          <property name="plugin-package.short-description" value="" />
+
+          <property name="java.specification.version" value="1.6" />
+
+          <property name="app.server.lib.global.dir" value="/opt/lf60/liferay-portal-6.0.6/tomcat-6.0.29/lib/ext" />
+
+          <property name="sun.arch.data.model" value="64" />
+
+          <property name="env.GNOME_DESKTOP_SESSION_ID" value="this-is-deprecated" />
+
+      </properties>
+
+      <testcase classname="com.oldschool.user.registration.unittest.portlet.RegisterFormValidatorTest" name="testValidateRegister" time="0.012" />
+
+      <system-out><![CDATA[@Test - testValidateRegister
+]]></system-out>
+
+      <system-err><![CDATA[]]></system-err>
+
+  </testsuite>
+</testsuites>
