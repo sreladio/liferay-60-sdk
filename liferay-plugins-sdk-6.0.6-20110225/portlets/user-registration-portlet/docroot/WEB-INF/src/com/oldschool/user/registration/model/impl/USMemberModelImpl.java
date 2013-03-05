@@ -72,14 +72,9 @@ public class USMemberModelImpl extends BaseModelImpl<USMember>
 	public static final String DATA_SOURCE = "liferayDataSource";
 	public static final String SESSION_FACTORY = "liferaySessionFactory";
 	public static final String TX_MANAGER = "liferayTransactionManager";
-	public static final boolean ENTITY_CACHE_ENABLED = GetterUtil.getBoolean(com.liferay.util.service.ServiceProps.get(
-				"value.object.entity.cache.enabled.com.oldschool.user.registration.model.USMember"),
-			true);
-	public static final boolean FINDER_CACHE_ENABLED = GetterUtil.getBoolean(com.liferay.util.service.ServiceProps.get(
-				"value.object.finder.cache.enabled.com.oldschool.user.registration.model.USMember"),
-			true);
-	public static final long LOCK_EXPIRATION_TIME = GetterUtil.getLong(com.liferay.util.service.ServiceProps.get(
-				"lock.expiration.time.com.oldschool.user.registration.model.USMember"));
+	public static final boolean ENTITY_CACHE_ENABLED = true;
+	public static final boolean FINDER_CACHE_ENABLED = true;
+	public static final long LOCK_EXPIRATION_TIME = 1200000;
 
 	public USMemberModelImpl() {
 	}

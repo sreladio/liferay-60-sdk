@@ -3,4 +3,52 @@
 
 <project name="user-registration-portlet" basedir="." default="deploy">
 	<import file="../build-common-portlet.xml" />
+	
+    <property name="src.dir" value="${basedir}/docroot/WEB-INF/src"/>
+    <property name="classes.dir" value="${basedir}/docroot/WEB-INF/classes"/>
+    <property name="lib.dir" value="${basedir}/docroot/WEB-INF/lib"/>
+
+    <property name="test.src.dir" value="${basedir}/unitTest/src"/>
+    <property name="test.classes.dir" value="${basedir}/unitTest/output"/>
+    <property name="test.lib.dir" value="${basedir}/unitTest/lib"/>
+	
+	<path id="test.class.path">
+	        <pathelement location="${classes.dir}"/>
+	        <fileset dir="${lib.dir}">
+	            <include name="*.jar"/>
+	        </fileset>
+	        <pathelement location="${test.classes.dir}"/>
+	        <fileset dir="${test.lib.dir}">
+	            <include name="*.jar"/>
+	        </fileset>
+	</path>
+	
+	<target name="test" depends="clean-tests, compile">
+			
+			<mkdir dir="${test.classes.dir}"/>
+			
+			<copy todir="${test.classes.dir}">
+				<fileset dir="${classes.dir}"/>
+			</copy>
+		
+	        <javac classpathref="test.class.path"
+	                destdir="${test.classes.dir}"
+	                srcdir="${test.src.dir}"
+	                debug="true"
+	                target="${ant.build.javac.target}">
+	            <include name="**/*"/>
+	        </javac>
+		
+        	<junit dir="${test.classes.dir}/com/oldschool/user/registration/unittest/portlet" fork="true" printsummary="true" showoutput="true">
+          		<classpath refid="test.class.path"/>
+            	<formatter type="brief" usefile="false"/>
+            	<formatter type="xml"/>
+            	<test name="com.oldschool.user.registration.unittest.portlet.RegisterFormValidatorTest"/>
+        	</junit>
+	</target>
+    
+	<target name="clean-tests">
+	        <delete dir="${test.classes.dir}"/>
+	</target>
+	
 </project>

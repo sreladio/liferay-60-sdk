@@ -33,43 +33,63 @@ public class registerFormValidator {
 		boolean valid = true;
 		
 		// Todos lo campos requeridos excepto el tel�fono
-		if (Validator.isNull(member.getMemberFirstName())) {
-			errors.add("first-name-required");
-			valid = false;
-		}
-		if (Validator.isNull(member.getMemberLastName())) {
-			errors.add("last-name-required");
-			valid = false;
-		}
-		if (Validator.isNull(member.getMemberEmail())) {
-			errors.add("eMail-required");
-			valid = false;
-		}
+	
+		valid = checkForValidFirstName(member, errors);
+	
+		valid = checkForValidLastName(member, errors);
 		
-		// El tel�fono debe de contener nueve d�gitos
-		if ( Validator.isNotNull(member.getMemberPhoneNumber()) ) {
-			if ( !checkForValidPhoneNumber(member.getMemberPhoneNumber()) ) {
-				errors.add("phone-number-must-contain-nine-digits");
-				valid = false;
-			}
-		} else {
-		}
+		valid = checkForValidEmailAddress(member, errors);
 		
-		// El correo electr�nico debe de contener @
-		if(!Validator.isEmailAddress(member.getMemberEmail())) {
-			errors.add("eMail-must-be-valid");
-			valid = false;
-		}
+		valid = checkForValidPhoneNumber(member, errors);
 		
 		return valid;
 	}
 	
-	private static boolean checkForValidPhoneNumber(String input) {
-		Pattern p = Pattern.compile("\\d{9}");
-	    Matcher m = p.matcher(input);
-	    if (m.find() && input.length() < 10) {
-	    	return true;
-	    }
-	    return false;
+	private static boolean checkForValidFirstName(USMember member, List<String> errors) {
+		if (Validator.isNull(member.getMemberFirstName())) {
+			errors.add("first-name-required");
+			return false;
+		}
+		return true;
+	}
+	
+	private static boolean checkForValidLastName(USMember member, List<String> errors) {
+		if (Validator.isNull(member.getMemberLastName())) {
+			errors.add("last-name-required");
+			return false;
+		}
+		return true;
+	}
+	
+	private static boolean checkForValidEmailAddress(USMember member, List<String> errors) {
+		String emailAddress = member.getMemberEmail();
+		
+		if (Validator.isNull(emailAddress)) {
+			errors.add("eMail-required");
+			return false;
+		}
+		
+		//else if(!Validator.isEmailAddress(emailAddress)) {
+		//	errors.add("eMail-must-be-valid");
+		//	return false;
+		//}
+		
+		return true;
+	}
+	
+	private static boolean checkForValidPhoneNumber(USMember member, List<String> errors) {
+		String input = member.getMemberPhoneNumber();
+		
+		if ( Validator.isNotNull(input) ) {
+			Pattern p = Pattern.compile("\\d{9}");
+		    Matcher m = p.matcher(input);
+		    if (m.find() && input.length() < 10) {
+		    	return true;
+		    }
+		    errors.add("phone-number-must-contain-nine-digits");
+		    return false;
+		}
+
+		return true;
 	}
 }
